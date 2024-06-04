@@ -1,12 +1,23 @@
-
 from pathlib import Path
 from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 import GPS as gps
+import Main as main
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\pelayo.garcia\Desktop\RSSI-measurement-device\Interface\build\assets\frame0")
-
+print("Donde estás programando?")
+print("1. TSK")
+print("2. Portatil")
+print("3. Raspberry")
+ruta = input("Seleccione uno:")
+if ruta == 1:
+    ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\pelayo.garcia\Desktop\RSSI-measurement-device\Interface\build\assets\frame0")
+elif ruta == 2:
+    ASSETS_PATH = OUTPUT_PATH / Path(r"C:\Users\Vicente\Desktop\RSSI-measurement-device\Interface\build\assets\frame0")
+elif ruta == 3:
+    ASSETS_PATH = OUTPUT_PATH / Path(r"\home\pelayo\Desktop\RSSI-measurement-device\Interface\build\assets\frame0")
+else:
+    print("Error en la selección de dispositivo")
 
 def relative_to_assets(path: str) -> Path:
     return ASSETS_PATH / Path(path)
@@ -71,7 +82,7 @@ class FullScreenApp:
             image=button_image_1,
             borderwidth=0,
             highlightthickness=0,
-            command=lambda: print("button_1 clicked"),
+            command=self.inicio,
             relief="flat"
         )
         button_1.place(
@@ -87,7 +98,7 @@ class FullScreenApp:
             image=button_image_2,
             borderwidth=0,
             highlightthickness=0,
-            command=lambda: print("button_2 clicked"),
+            command=self.test,
             relief="flat"
         )
         button_2.place(
@@ -555,9 +566,19 @@ class FullScreenApp:
         self.pres = self.entry_8.get()
         self.g_ant = self.entry_9.get()
         self.name = self.entry_10.get()
+        main.main(lat_val=self.lat, lon_val=self.lon, p_val=self.pres, f_val=self.freq, g_val=self.g_rx, n_val=self.name)
 
     def test(self):
-
+        try:
+            datos_test = gps.obtener_datos_gps()
+            self.set_longitude(datos_test['longitude'])
+            self.set_latitude(datos_test['latitude'])
+            self.set_altitude(datos_test['altitude'])
+        except Exception as e:
+            print(e)
+            self.set_longitude("ERR")
+            self.set_latitude("ERR")
+            self.set_altitude("ERR")
 
     def set_longitude(self, longitude):
         item_id = self.canvas.find_withtag("longitude")
@@ -571,7 +592,5 @@ class FullScreenApp:
         item_id = self.canvas.find_withtag("altitude")
         self.canvas.itemconfig(item_id, text=altitude) 
     
-
-
 if __name__ == '__main__':
     m=FullScreenApp()
