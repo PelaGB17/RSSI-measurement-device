@@ -282,7 +282,7 @@ class FullScreenApp:
         self.image_test = PhotoImage(
             file=relative_to_assets("image_6.png"))
         self.test_bg = self.canvas.create_image(
-            1347.0,
+            1210.0,
             69.0,
             image=self.image_test
         )
@@ -468,6 +468,25 @@ class FullScreenApp:
             width=250.0,
             height=30.0
         )
+        
+        self.canvas.create_text(
+            599.0,
+            49.0,
+            anchor="nw",
+            text="RSSI:",
+            fill="#FFEAEC",
+            font=("Inter Bold", 40 * -1)
+        )
+
+        self.canvas.create_text(
+            1018.0,
+            49.0,
+            anchor="nw",
+            text="XX.XXX",
+            tags = ("RSSI"),
+            fill="#FFEAEC",
+            font=("Inter Bold", 40 * -1)
+        )
 
         self.canvas.create_text(
             867.0,
@@ -552,6 +571,15 @@ class FullScreenApp:
             fill="#FFEAEC",
             font=("Inter Bold", 40 * -1)
         )
+        
+        self.canvas.create_rectangle(
+            690.0,
+            240.0,
+            1870.0,
+            1020.0,
+            fill="#D9D9D9",
+            outline="")
+        
         self.window.resizable(False, False)
         self.window.mainloop()
 
@@ -582,6 +610,10 @@ class FullScreenApp:
             self.set_longitude("ERR")
             self.set_latitude("ERR")
             self.set_altitude("ERR")
+    
+    def set_RSSI(self, RSSI):
+        item_id = self.canvas.find_withtag("RSSI")
+        self.canvas.itemconfig(item_id, text=RSSI) 
 
     def set_longitude(self, longitude):
         item_id = self.canvas.find_withtag("longitude")
