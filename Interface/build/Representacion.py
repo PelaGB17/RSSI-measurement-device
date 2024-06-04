@@ -6,8 +6,8 @@ def representa_medidas(data, config):
     # ------------------------- DATOS DE ENTRADA ------------------------------
     # Carga del fichero de medidas y de los datos de configuración de la medida.
     C = np.loadtxt(data)
-    A = np.genfromtxt(config, comments="%", skip_header=9)
-    pol = 'V'
+    A = np.genfromtxt(config, comments="%", skip_header=6)
+    pol = 'Circ'
 
     # ----------------------- FIN DATOS DE ENTRADA ----------------------------
 
@@ -17,13 +17,11 @@ def representa_medidas(data, config):
     if freq not in allowed_freq:
         raise ValueError('Error. /n Frequency must be 2.3e3, 2.4e3, 5e3 or 5.1e3')
 
-    dispositivo_tx = A[1];  # dispositivo USRP usado para transmitir
-    dispositivo_rx = A[5];  # dispositivo USRP usado para recibir
-    G_t = A[2];     # ganancia en el USRP transmisor
-    G_r = A[6];     # ganancia en el USRP receptor
-    antenas = A[3]; # ganancia de las antenas transmisora y receptora (antenas iguales, con la misma ganancia)
-    h_t = A[4];     # altura de la antena transmisora
-    h_r = A[8];     # altura de la antena receptora
+    G_t = A[1];     # ganancia en el USRP transmisor
+    G_r = A[4];     # ganancia en el USRP receptor
+    antenas = A[2]; # ganancia de las antenas transmisora y receptora (antenas iguales, con la misma ganancia)
+    h_t = A[3];     # altura de la antena transmisora
+    h_r = A[5];     # altura de la antena receptora
 
 
     # Atenuación de los cables coaxiales.
@@ -42,34 +40,18 @@ def representa_medidas(data, config):
     Pmed_2_5G = [-54.3, -44.3, -34.3, -24.4, -14.4, -4.3, 5.7];   # B200mini, 5 GHz
     Ganancia_tx = list(range(20, 81, 10))
 
-    if dispositivo_tx == 1:
-        for i in Ganancia_tx:
-            if freq in [2.3e3, 2.4e3]:
-                if G_t == i:
-                    col = Ganancia_tx.index(G_t)
-                    P_t = Pmed_1_2G3[col]
-            else:
-                if G_t == i:
-                    col = Ganancia_tx.index(G_t)
-                    P_t = Pmed_1_5G[col]
-    else:
-        for i in Ganancia_tx:
-            if freq in [2.3e3, 2.4e3]:
-                if G_t == i:
-                    col = Ganancia_tx.index(G_t)
-                    P_t = Pmed_2_2G3[col]
-            else:
-                if G_t == i:
-                    col = Ganancia_tx.index(G_t)
-                    P_t = Pmed_2_5G[col]
+    for i in Ganancia_tx:
+        if freq in [2.3e3, 2.4e3]:
+            if G_t == i:
+                col = Ganancia_tx.index(G_t)
+                P_t = Pmed_2_2G3[col]
+        else:
+            if G_t == i:
+                col = Ganancia_tx.index(G_t)
+                P_t = Pmed_2_5G[col]
 
     # Ganancia de los amplificadores externos.
-    if A[7] == 0:
-        ampli_externo = 0
-    elif A[7] == 1:
-        ampli_externo = 21 if freq == 2.3e3 or freq == 2.4e3 else 20
-    else:
-        ampli_externo = 42 if freq == 2.3e3 or freq == 2.4e3 else 40
+    ampli_externo = 0
 
     # Factor de calibración del dispositivo USRP (relación entre la medida del
     # USRP (dB) y la potencia recibida (dBm)), según datos recabados de la
@@ -82,48 +64,26 @@ def representa_medidas(data, config):
         [15.38, -0.25, -8.9, -17.5]
     ]
 
-    if dispositivo_rx == 1:
-        if G_r == 0:
-            if freq == 2.3e3 or freq == 2.4e3:
-                cal_off = Ganancia_rx[0][0]
-            else:
-                cal_off = Ganancia_rx[1][0]
-        elif G_r == 20:
-            if freq == 2.3e3 or freq == 2.4e3:
-                cal_off = Ganancia_rx[0][1]
-            else:
-                cal_off = Ganancia_rx[1][1]
-        elif G_r == 30:
-            if freq == 2.3e3 or freq == 2.4e3:
-                cal_off = Ganancia_rx[0][2]
-            else:
-                cal_off = Ganancia_rx[1][2]
+    if G_r == 0:
+        if freq == 2.3e3 or freq == 2.4e3:
+            cal_off = Ganancia_rx[2][0]
         else:
-            if freq == 2.3e3 or freq == 2.4e3:
-                cal_off = Ganancia_rx[0][3]
-            else:
-                cal_off = Ganancia_rx[1][3]
+            cal_off = Ganancia_rx[3][0]
+    elif G_r == 20:
+        if freq == 2.3e3 or freq == 2.4e3:
+            cal_off = Ganancia_rx[2][1]
+        else:
+            cal_off = Ganancia_rx[3][1]
+    elif G_r == 30:
+        if freq == 2.3e3 or freq == 2.4e3:
+            cal_off = Ganancia_rx[2][2]
+        else:
+            cal_off = Ganancia_rx[3][2]
     else:
-        if G_r == 0:
-            if freq == 2.3e3 or freq == 2.4e3:
-                cal_off = Ganancia_rx[2][0]
-            else:
-                cal_off = Ganancia_rx[3][0]
-        elif G_r == 20:
-            if freq == 2.3e3 or freq == 2.4e3:
-                cal_off = Ganancia_rx[2][1]
-            else:
-                cal_off = Ganancia_rx[3][1]
-        elif G_r == 30:
-            if freq == 2.3e3 or freq == 2.4e3:
-                cal_off = Ganancia_rx[2][2]
-            else:
-                cal_off = Ganancia_rx[3][2]
+        if freq == 2.3e3 or freq == 2.4e3:
+            cal_off = Ganancia_rx[2][3]
         else:
-            if freq == 2.3e3 or freq == 2.4e3:
-                cal_off = Ganancia_rx[2][3]
-            else:
-                cal_off = Ganancia_rx[3][3]
+            cal_off = Ganancia_rx[3][3]
 
     # Representación de modelos y medidas.
 
@@ -163,10 +123,7 @@ def representa_medidas(data, config):
     plt.xlabel("Distance (m)")
     plt.ylabel("RSSI value (dBm)")
 
-    if dispositivo_rx == 1:
-        plt.legend()
-    else:
-        plt.legend(loc='best')
+    plt.legend(loc='best')
 
     plt.title(f"Frequency: {freq * 1e-3} GHz; Pol: {pol}")
     plt.xlim([0, 70])

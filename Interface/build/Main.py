@@ -3,6 +3,7 @@ import sys
 import time
 import os
 import signal
+import Interfaz
 from GNU_Radio import GNURadioBlock
 from GPS import inicializar_gps, obtener_datos_gps
 from Barometro import inicializar_barometro, obtener_datos_barometro
@@ -52,6 +53,9 @@ def main(top_block_cls=GNURadioBlock, lat_val=0, lon_val=0, p_val=1, f_val=0, g_
             with open(ruta + "/" + "medidas" + ".txt", 'a') as txt_file:
                 txt_file.write(" ".join(medidas))
                 txt_file.write('\n')
+            Interfaz.FullScreenApp.set_altitude(altura)
+            Interfaz.FullScreenApp.set_longitude(datos_gps["longitude"])
+            Interfaz.FullScreenApp.set_latitude(datos_gps["latitude"])
 
         except KeyboardInterrupt:
             pass
@@ -61,6 +65,21 @@ def main(top_block_cls=GNURadioBlock, lat_val=0, lon_val=0, p_val=1, f_val=0, g_
             procesar_archivo(ruta, p_val, n_val)
             Heatmap.main(ruta)
             os.remove(n_val)
+
+def create_info_file(freq_MHz=2400, g_tx=40, g_ant=0, h_tx=0.3, g_rx=40 ,h_rx=0.3):
+     with open(ruta + "/" + "config" + ".txt", 'a') as txt_file:
+        txt_file.write("% Line 1: Frecuencia de operación (MHz). Los posibles valores son únicamente 2.3e3 ó 5.1e3 MHz.\n")
+        txt_file.write("% Line 2: Ganancia Tx (dB).  Los posibles valores son entre 0 y 80 dB con pasos de 10 dB.\n")
+        txt_file.write("% Line 3: Ganancia de las antenas (dB).\n")
+        txt_file.write("% Line 4: Altura de las antenas Tx (m).\n")
+        txt_file.write("% Line 5: Ganancia Rx (dB). Los posibles valores son entre 0 y 80 dB con pasos de 10 dB.\n")
+        txt_file.write("% Line 6: Altura de las antenas Rx (m).\n")
+        txt_file.write(freq_MHz + "\n")
+        txt_file.write(g_tx + "\n")
+        txt_file.write(g_ant + "\n")
+        txt_file.write(h_tx + "\n")
+        txt_file.write(g_rx + "\n")
+        txt_file.write(h_rx + "\n")
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='GNU Radio script.')

@@ -556,7 +556,7 @@ class FullScreenApp:
         self.window.mainloop()
 
     def inicio(self):
-        self.freq = self.entry_1.get()
+        self.freq = self.entry_1.get()  #Frecuencia en GHz
         self.g_rx = self.entry_2.get()
         self.g_tx = self.entry_3.get()
         self.lat = self.entry_4.get()
@@ -566,6 +566,9 @@ class FullScreenApp:
         self.pres = self.entry_8.get()
         self.g_ant = self.entry_9.get()
         self.name = self.entry_10.get()
+        self.freq_Hz=float(self.freq*10**9)
+        self.freq_MHz=float(self.freq*10**3)
+        main.create_info_file(freq_MHz=self.freq, g_tx=self.g_tx, g_ant=self.g_ant, h_tx=self.h_tx, g_rx=self.g_rx ,h_rx=self.h_rx)
         main.main(lat_val=self.lat, lon_val=self.lon, p_val=self.pres, f_val=self.freq, g_val=self.g_rx, n_val=self.name)
 
     def test(self):
