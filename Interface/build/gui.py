@@ -4,6 +4,8 @@
 
 
 from pathlib import Path
+import GPS as gps
+import Main as main
 
 # from tkinter import *
 # Explicit imports to satisfy Flake8
@@ -22,7 +24,6 @@ class FullScreenApp:
             
     def __init__(self):    
         window = Tk()
-
         window.geometry("1920x1080")
         window.configure(bg = "#9CC795")
 
@@ -68,7 +69,7 @@ class FullScreenApp:
             image=self.button_image_1,
             borderwidth=0,
             highlightthickness=0,
-            command=lambda: print("button_1 clicked"),
+            command=self.stop,
             relief="flat"
         )
         self.button_1.place(
@@ -84,7 +85,7 @@ class FullScreenApp:
             image=self.button_image_2,
             borderwidth=0,
             highlightthickness=0,
-            command=lambda: print("button_2 clicked"),
+            command=self.test,
             relief="flat"
         )
         button_2.place(
@@ -100,7 +101,7 @@ class FullScreenApp:
             image=self.button_image_3,
             borderwidth=0,
             highlightthickness=0,
-            command=lambda: print("button_3 clicked"),
+            command=self.inicio,
             relief="flat"
         )
         self.button_3.place(
@@ -610,23 +611,39 @@ class FullScreenApp:
         window.resizable(False, False)
         window.mainloop()
 
+    def inicio(self):
+        self.freq = self.entry_1.get()  #Frecuencia en GHz
+        self.g_rx = self.entry_2.get()
+        self.g_tx = self.entry_3.get()
+        self.lat = self.entry_4.get()
+        self.lon = self.entry_5.get()
+        self.h_tx = self.entry_6.get()
+        self.h_rx = self.entry_7.get()
+        self.pres = self.entry_8.get()
+        self.g_ant = self.entry_9.get()
+        self.name = self.entry_10.get()
+        self.freq_Hz=float(self.freq*10**9)
+        self.freq_MHz=float(self.freq*10**3)
+        main.create_info_file(freq_MHz=self.freq, g_tx=self.g_tx, g_ant=self.g_ant, h_tx=self.h_tx, g_rx=self.g_rx ,h_rx=self.h_rx)
+        main.main(lat_val=self.lat, lon_val=self.lon, p_val=self.pres, f_val=self.freq, g_val=self.g_rx, n_val=self.name)
+
     def test(self):
         try:
-            # datos_test = gps.obtener_datos_gps()
+            datos_test = gps.obtener_datos_gps()
+            RSSI = main.nivel_de_senal()
             self.set_longitude(datos_test['longitude'])
             self.set_latitude(datos_test['latitude'])
             self.set_altitude(datos_test['altitude'])
+            self.set_altitude(RSSI)
         except Exception as e:
             print(e)
             self.set_longitude("ERR")
             self.set_latitude("ERR")
             self.set_altitude("ERR")
-
-    def inicio(self):
-        break
+            self.set_RSSI("ERR")
 
     def stop(self):
-        break
+        main.stop()
     
     def set_RSSI(self, RSSI):
         item_id = self.canvas.find_withtag("RSSI")

@@ -66,6 +66,26 @@ def main(top_block_cls=GNURadioBlock, lat_val=0, lon_val=0, p_val=1, f_val=0, g_
             Heatmap.main(ruta)
             os.remove(n_val)
 
+def nivel_de_senal():
+    top_block_cls=GNURadioBlock
+    tb = top_block_cls(f_val=2.4*10**9, g_val=40, n_val="medidas")
+    
+    def sig_handler(sig=None, frame=None):
+        tb.stop()
+        tb.wait()
+        sys.exit(0)
+
+    signal.signal(signal.SIGINT, sig_handler)
+    signal.signal(signal.SIGTERM, sig_handler)
+            
+    tb.start()
+    tb.wait()
+    level=obtener_medidas(n_val)
+    tb.stop()
+    
+    return level
+        
+
 def create_info_file(freq_MHz=2400, g_tx=40, g_ant=0, h_tx=0.3, g_rx=40 ,h_rx=0.3):
      with open(ruta + "/" + "config" + ".txt", 'a') as txt_file:
         txt_file.write("% Line 1: Frecuencia de operación (MHz). Los posibles valores son únicamente 2.3e3 ó 5.1e3 MHz.\n")
