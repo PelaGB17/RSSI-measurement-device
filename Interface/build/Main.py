@@ -9,7 +9,8 @@ from GPS import inicializar_gps, obtener_datos_gps
 from Barometro import inicializar_barometro, obtener_datos_barometro
 from Pantalla import inicializar_pantalla, mostrar_datos_pantalla
 from Utilidades import obtener_distancia_gps, calcula_altitud, obtener_medidas, procesar_archivo, crear_siguiente_carpeta
-import Scripts.Herramientas.Heatmap as Heatmap
+import Heatmap
+import Representacion
 
 
 def main(top_block_cls=GNURadioBlock, lat_val=0, lon_val=0, p_val=1, f_val=0, g_val=20, n_val="medidas", options=None):
@@ -53,9 +54,11 @@ def main(top_block_cls=GNURadioBlock, lat_val=0, lon_val=0, p_val=1, f_val=0, g_
             with open(ruta + "/" + "medidas" + ".txt", 'a') as txt_file:
                 txt_file.write(" ".join(medidas))
                 txt_file.write('\n')
+            
             Interfaz.FullScreenApp.set_altitude(altura)
             Interfaz.FullScreenApp.set_longitude(datos_gps["longitude"])
             Interfaz.FullScreenApp.set_latitude(datos_gps["latitude"])
+            Interfaz.FullScreenApp.set_RSSI(level)
 
         except KeyboardInterrupt:
             pass
@@ -63,7 +66,10 @@ def main(top_block_cls=GNURadioBlock, lat_val=0, lon_val=0, p_val=1, f_val=0, g_
             tb.stop()
             tb.wait()
             procesar_archivo(ruta, p_val, n_val)
-            Heatmap.main(ruta)
+            archivo1 = ruta + n_val + ".txt"
+            archivo2 = ruta + "procesado.txt"
+            Heatmap.main(archivo1, ruta)
+            
             os.remove(n_val)
 
 def nivel_de_senal():

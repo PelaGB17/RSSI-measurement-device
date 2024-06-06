@@ -69,19 +69,10 @@ def crear_subplots(datos, ruta_guardado):
     plt.show()
 
 # Función principal
-def main(prueba):
-    # Solicitar al usuario el nombre de la prueba
-    prueba += "a_Prueba"
-
-    # Construir la ruta del archivo medidas.txt
-    ruta_datos = os.path.join("Medidas", prueba, "medidas.txt")
-    
-    # Ruta donde se guardará el archivo PNG
-    archivo = prueba + ".png"
-    ruta_guardado = os.path.join("Medidas", prueba, archivo)
+def main(ruta, ruta_guardado):
 
     # Cargar los datos
-    datos = cargar_datos(ruta_datos)
+    datos = cargar_datos(ruta)
 
     if datos is not None:
         # Eliminar filas con NaN (si las hay)
