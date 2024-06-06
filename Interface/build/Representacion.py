@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import argparse
 
-def representa_medidas(data, config):
+def representa_medidas(data, config, ruta_guardado):
     # ------------------------- DATOS DE ENTRADA ------------------------------
     # Carga del fichero de medidas y de los datos de configuración de la medida.
     C = np.loadtxt(data)
@@ -130,6 +130,7 @@ def representa_medidas(data, config):
     plt.ylim([-100, -20])
     plt.grid(True)
     plt.show()
+    plt.savefig(ruta_guardado)
 
 
 if __name__ == "__main__":
