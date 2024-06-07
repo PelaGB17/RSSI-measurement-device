@@ -291,24 +291,150 @@ class FullScreenApp:
         self.entry_image = PhotoImage(
             file=relative_to_assets("entry.png"))
         
-        self.entry_bg_1 = self.canvas.create_image(
+        self.entry_bg_10 = self.canvas.create_image(
             465.0,
-            900.0,
+            270.0,
             image=self.entry_image
         )
-        self.entry_1 = Entry(
+        self.entry_10 = Entry(
             bd=0,
             bg="#FFFFFF",
             fg="#000716",
             highlightthickness=0
         )
-        self.entry_1.place(
+        self.entry_10.place(
             x=340.0,
-            y=885.0,
+            y=255.0,
             width=250.0,
             height=30.0
         )
-
+        
+        self.entry_bg_9 = self.canvas.create_image(
+            465.0,
+            340.0,
+            image=self.entry_image
+        )
+        self.entry_9 = Entry(
+            bd=0,
+            bg="#FFFFFF",
+            fg="#000716",
+            highlightthickness=0
+        )
+        self.entry_9.place(
+            x=340.0,
+            y=325.0,
+            width=250.0,
+            height=30.0
+        )
+        
+        self.entry_bg_8 = self.canvas.create_image(
+            465.0,
+            410.0,
+            image=self.entry_image
+        )
+        self.entry_8 = Entry(
+            bd=0,
+            bg="#FFFFFF",
+            fg="#000716",
+            highlightthickness=0
+        )
+        self.entry_8.place(
+            x=340.0,
+            y=395.0,
+            width=250.0,
+            height=30.0
+        )
+        
+        self.entry_bg_7 = self.canvas.create_image(
+            465.0,
+            480.0,
+            image=self.entry_image
+        )
+        self.entry_7 = Entry(
+            bd=0,
+            bg="#FFFFFF",
+            fg="#000716",
+            highlightthickness=0
+        )
+        self.entry_7.place(
+            x=340.0,
+            y=465.0,
+            width=250.0,
+            height=30.0
+        )
+        
+        self.entry_bg_6 = self.canvas.create_image(
+            465.0,
+            550.0,
+            image=self.entry_image
+        )
+        self.entry_6 = Entry(
+            bd=0,
+            bg="#FFFFFF",
+            fg="#000716",
+            highlightthickness=0
+        )
+        self.entry_6.place(
+            x=340.0,
+            y=535.0,
+            width=250.0,
+            height=30.0
+        )
+        
+        self.entry_bg_5 = self.canvas.create_image(
+            465.0,
+            620.0,
+            image=self.entry_image
+        )
+        self.entry_5 = Entry(
+            bd=0,
+            bg="#FFFFFF",
+            fg="#000716",
+            highlightthickness=0
+        )
+        self.entry_5.place(
+            x=340.0,
+            y=605.0,
+            width=250.0,
+            height=30.0
+        )
+        
+        self.entry_bg_4 = self.canvas.create_image(
+            465.0,
+            690.0,
+            image=self.entry_image
+        )
+        self.entry_4 = Entry(
+            bd=0,
+            bg="#FFFFFF",
+            fg="#000716",
+            highlightthickness=0
+        )
+        self.entry_4.place(
+            x=340.0,
+            y=675.0,
+            width=250.0,
+            height=30.0
+        )
+        
+        self.entry_bg_3 = self.canvas.create_image(
+            465.0,
+            760.0,
+            image=self.entry_image
+        )
+        self.entry_3 = Entry(
+            bd=0,
+            bg="#FFFFFF",
+            fg="#000716",
+            highlightthickness=0
+        )
+        self.entry_3.place(
+            x=340.0,
+            y=745.0,
+            width=250.0,
+            height=30.0
+        )
+        
         self.entry_bg_2 = self.canvas.create_image(
             465.0,
             830.0,
@@ -327,146 +453,20 @@ class FullScreenApp:
             height=30.0
         )
 
-        self.entry_bg_3 = self.canvas.create_image(
+        self.entry_bg_1 = self.canvas.create_image(
             465.0,
-            760.0,
+            900.0,
             image=self.entry_image
         )
-        self.entry_3 = Entry(
+        self.entry_1 = Entry(
             bd=0,
             bg="#FFFFFF",
             fg="#000716",
             highlightthickness=0
         )
-        self.entry_3.place(
+        self.entry_1.place(
             x=340.0,
-            y=745.0,
-            width=250.0,
-            height=30.0
-        )
-
-        self.entry_bg_4 = self.canvas.create_image(
-            465.0,
-            690.0,
-            image=self.entry_image
-        )
-        self.entry_4 = Entry(
-            bd=0,
-            bg="#FFFFFF",
-            fg="#000716",
-            highlightthickness=0
-        )
-        self.entry_4.place(
-            x=340.0,
-            y=675.0,
-            width=250.0,
-            height=30.0
-        )
-
-        self.entry_bg_5 = self.canvas.create_image(
-            465.0,
-            620.0,
-            image=self.entry_image
-        )
-        self.entry_5 = Entry(
-            bd=0,
-            bg="#FFFFFF",
-            fg="#000716",
-            highlightthickness=0
-        )
-        self.entry_5.place(
-            x=340.0,
-            y=605.0,
-            width=250.0,
-            height=30.0
-        )
-
-        self.entry_bg_6 = self.canvas.create_image(
-            465.0,
-            550.0,
-            image=self.entry_image
-        )
-        self.entry_6 = Entry(
-            bd=0,
-            bg="#FFFFFF",
-            fg="#000716",
-            highlightthickness=0
-        )
-        self.entry_6.place(
-            x=340.0,
-            y=535.0,
-            width=250.0,
-            height=30.0
-        )
-
-        self.entry_bg_7 = self.canvas.create_image(
-            465.0,
-            480.0,
-            image=self.entry_image
-        )
-        self.entry_7 = Entry(
-            bd=0,
-            bg="#FFFFFF",
-            fg="#000716",
-            highlightthickness=0
-        )
-        self.entry_7.place(
-            x=340.0,
-            y=465.0,
-            width=250.0,
-            height=30.0
-        )
-
-        self.entry_bg_8 = self.canvas.create_image(
-            465.0,
-            410.0,
-            image=self.entry_image
-        )
-        self.entry_8 = Entry(
-            bd=0,
-            bg="#FFFFFF",
-            fg="#000716",
-            highlightthickness=0
-        )
-        self.entry_8.place(
-            x=340.0,
-            y=395.0,
-            width=250.0,
-            height=30.0
-        )
-
-        self.entry_bg_9 = self.canvas.create_image(
-            465.0,
-            340.0,
-            image=self.entry_image
-        )
-        self.entry_9 = Entry(
-            bd=0,
-            bg="#FFFFFF",
-            fg="#000716",
-            highlightthickness=0
-        )
-        self.entry_9.place(
-            x=340.0,
-            y=325.0,
-            width=250.0,
-            height=30.0
-        )
-
-        self.entry_bg_10 = self.canvas.create_image(
-            465.0,
-            270.0,
-            image=self.entry_image
-        )
-        self.entry_10 = Entry(
-            bd=0,
-            bg="#FFFFFF",
-            fg="#000716",
-            highlightthickness=0
-        )
-        self.entry_10.place(
-            x=340.0,
-            y=255.0,
+            y=885.0,
             width=250.0,
             height=30.0
         )
