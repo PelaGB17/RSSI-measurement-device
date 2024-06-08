@@ -612,7 +612,7 @@ class FullScreenApp:
             self.set_RSSI("ERR")
 
     def stop(self):
-        mainclass.status = False
+        self.mainclass.status = False
     
     def set_RSSI(self, RSSI):
         item_id = self.canvas.find_withtag("RSSI")
