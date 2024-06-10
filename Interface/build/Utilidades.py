@@ -9,8 +9,6 @@ def obtener_distancia_gps(lat1, lon1, lat2, lon2):
     return geodesic(coords_1, coords_2).meters
 
 def calcula_altitud(presion, presion_nivel_mar) -> float:
-            """The altitude based on the sea level pressure (:attr:`sea_level_pressure`)
-            - which you must enter ahead of time)"""
             p = presion # in Si units for hPascal
             if presion == None:
                 return None
@@ -24,11 +22,12 @@ def obtener_medidas(n_val):
     # Formatea la medicion de GNURadio
     for i in range(0, len(f), 2):
         level=str(f[i])
-    return level
     
     #Borra la línea del archivo binario
     with open(n_val, 'w') as file:
         file.truncate(0)
+
+    return level
 
 def crear_siguiente_carpeta(directorio_base, nombre_base):
     subcarpetas = [nombre for nombre in os.listdir(directorio_base) if os.path.isdir(os.path.join(directorio_base, nombre))]
@@ -46,7 +45,7 @@ def crear_siguiente_carpeta(directorio_base, nombre_base):
 
     return nueva_ruta
 
-def procesar_archivo(path, presion_nivel_mar,n_val):
+def procesar_archivo(path, n_val):
         with open(path+ "/" + n_val + ".txt", 'r') as input_file:
             lines = input_file.readlines()
 

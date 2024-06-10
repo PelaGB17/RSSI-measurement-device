@@ -3,7 +3,8 @@ import sys
 import time
 import os
 import signal
-import Interfaz
+from threading import Thread
+from Interfaz2 import FullScreenApp
 from GNU_Radio import GNURadioBlock
 from GPS import inicializar_gps, obtener_datos_gps
 from Barometro import inicializar_barometro, obtener_datos_barometro
@@ -17,12 +18,37 @@ class Main:
         inicializar_gps()
         self.oled = inicializar_pantalla()
         self.barometro = inicializar_barometro()
-        self.interfaz = Interfaz.FullScreenApp(self)
-        
-    def main(self, top_block_cls=GNURadioBlock, lat_val=0, lon_val=0, p_val=1, f_val=0, g_val=20, n_val="medidas", options=None):
+        self.interface = FullScreenApp(self)
+        self.config = []
+        self.run_thread = Thread(target=self.main(self.config))
+
+
+    def start(self, config):
         self.status = True
-        while True:
-            tb = top_block_cls(f_val=f_val, g_val=g_val, n_val=n_val)
+        self.config = config
+        self.run_thread.start()
+
+    def stop(self):
+        self.status = False
+        procesar_archivo(ruta, self.n_val)
+        datos = ruta + self.n_val + ".txt"
+        procesado = ruta + "procesado.txt"
+        config = ruta + "config.txt"
+        Heatmap.main(datos, ruta)
+        Representacion.representa_medidas(procesado, config, ruta)
+        os.remove(self.n_val)
+        
+    # def main(self, top_block_cls=GNURadioBlock, lat_val=0, lon_val=0, p_val=1, f_val=0, g_val=20, n_val="medidas", options=None):
+    def main(self, top_block_cls=GNURadioBlock, config=[None], options=None):
+        self.lat_val = config[0]
+        self.lon_val = config[1]
+        self.p_val = config[2]
+        self.f_val = config[3]
+        self.g_val = config[4]
+        self.n_val = config[5]
+
+        while self.status:
+            tb = top_block_cls(f_val=self.f_val, g_val=self.g_val, n_val=self.n_val)
             try:
                 def sig_handler(sig=None, frame=None):
                     tb.stop()
@@ -33,23 +59,22 @@ class Main:
                 signal.signal(signal.SIGTERM, sig_handler)
                 
                 tb.start()
-                
                 datos_gps = obtener_datos_gps()
-                distancia = obtener_distancia_gps(lat_val, lon_val, datos_gps['latitude'], datos_gps['longitude'])
+                distancia = obtener_distancia_gps(self.lat_val, self.lon_val, datos_gps['latitude'], datos_gps['longitude'])
                 presion = obtener_datos_barometro(self.barometro)
-                altura = calcula_altitud(presion, p_val)
+                altura = calcula_altitud(presion, self.p_val)
                 mostrar_datos_pantalla(self.oled, datos_gps)
                 timestamp = time.strftime("%H%M%S")
                            
                 tb.wait()
                 
-                level=obtener_medidas(n_val)
+                level=obtener_medidas(self.n_val)
                 tb.stop()
                 
                 medidas= [f" {level}", f" {datos_gps['latitude']}", f" {datos_gps['longitude']}", f" {presion}", f" {distancia}", f"{altura}", f"{datos_gps['altitude']}" ,f"{timestamp}"]
                 print(medidas)
                 
-                with open(ruta + "/" + n_val + ".txt", 'a') as txt_file:
+                with open(ruta + "/" + self.n_val + ".txt", 'a') as txt_file:
                     txt_file.write(" ".join(medidas))
                     txt_file.write('\n')
                 
@@ -57,22 +82,13 @@ class Main:
                 self.set_longitude(datos_gps["longitude"])
                 self.set_latitude(datos_gps["latitude"])
                 self.set_RSSI(level)
-                
-                if self.status == False:
-                    raise Exception("Measurement stopped")
 
             except Exception as e:
                 print(e)
             finally:
                 tb.stop()
                 tb.wait()
-                procesar_archivo(ruta, p_val, n_val)
-                datos = ruta + n_val + ".txt"
-                procesado = ruta + "procesado.txt"
-                config = ruta + "config.txt"
-                Heatmap.main(datos, ruta)
-                Representacion.representa_medidas(procesado, config, ruta)
-                os.remove(n_val)
+
 
     def nivel_de_senal(self):
         top_block_cls=GNURadioBlock
@@ -115,16 +131,16 @@ class Main:
             txt_file.write(str(h_rx) + "\n")
             
     def set_RSSI(self, RSSI):
-        self.interfaz.set_RSSI(RSSI)
+        self.interface.set_RSSI(RSSI)
         
     def set_altitude(self, altitude):
-        self.interfaz.set_altitude(altitude)
+        self.interface.set_altitude(altitude)
     
     def set_latitude(self, latitude):
-        self.interfaz.set_latitude(latitude)
+        self.interface.set_latitude(latitude)
         
     def set_longitude(self, longitude):
-        self.interfaz.set_longitude(longitude)
+        self.interface.set_longitude(longitude)
 
 #if __name__ == '__main__':
 #    parser = argparse.ArgumentParser(description='GNU Radio script.')

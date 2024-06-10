@@ -29,13 +29,17 @@ def obtener_datos_gps():
         
         if packet.mode >= 3:
             alt = packet.alt,
+            alt = str(alt)
+            alt = alt.replace("(","")
+            alt = alt.replace(")","")
+            alt = alt.replace(",","")
             
         return {
             "longitude": packet.lon,
             "latitude": packet.lat,
             "speed_knots": packet.hspeed,
             "satellites": packet.sats,
-            "altitude": alt,
+            "altitude": float(alt),
         }
         
     except Exception as e:

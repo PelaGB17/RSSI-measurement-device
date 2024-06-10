@@ -12,14 +12,8 @@ from Utilidades import obtener_distancia_gps, calcula_altitud, obtener_medidas, 
 import Heatmap
 import Representacion
 
-class Main:
-    def __init__(self):
-        inicializar_gps()
-        self.oled = inicializar_pantalla()
-        self.barometro = inicializar_barometro()
-        self.interfaz = Interfaz.FullScreenApp(self)
         
-    def main(self, top_block_cls=GNURadioBlock, lat_val=0, lon_val=0, p_val=1, f_val=0, g_val=20, n_val="medidas", options=None):
+def main(self, top_block_cls=GNURadioBlock, lat_val=0, lon_val=0, p_val=1, f_val=0, g_val=20, n_val="medidas", options=None):
         self.status = True
         while True:
             tb = top_block_cls(f_val=f_val, g_val=g_val, n_val=n_val)
@@ -74,7 +68,7 @@ class Main:
                 Representacion.representa_medidas(procesado, config, ruta)
                 os.remove(n_val)
 
-    def nivel_de_senal(self):
+def nivel_de_senal(self):
         top_block_cls=GNURadioBlock
         tb = top_block_cls(f_val=2400000000, g_val=40, n_val="medidas")
         
@@ -93,8 +87,7 @@ class Main:
         
         return level            
 
-    def create_info_file(self, freq_MHz=2400, g_tx=40, g_ant=0, h_tx=0.3, g_rx=40 ,h_rx=0.3, n_val="medidas"):
-        global ruta
+def create_info_file(self, freq_MHz=2400, g_tx=40, g_ant=0, h_tx=0.3, g_rx=40 ,h_rx=0.3, n_val="medidas"):
         if n_val == "medidas":
             ruta=crear_siguiente_carpeta("/home/rssidev/Desktop/Medidas", "a_prueba")
         else:
@@ -113,18 +106,8 @@ class Main:
             txt_file.write(str(h_tx) + "\n")
             txt_file.write(str(g_rx) + "\n")
             txt_file.write(str(h_rx) + "\n")
+        return ruta
             
-    def set_RSSI(self, RSSI):
-        self.interfaz.set_RSSI(RSSI)
-        
-    def set_altitude(self, altitude):
-        self.interfaz.set_altitude(altitude)
-    
-    def set_latitude(self, latitude):
-        self.interfaz.set_latitude(latitude)
-        
-    def set_longitude(self, longitude):
-        self.interfaz.set_longitude(longitude)
 
 #if __name__ == '__main__':
 #    parser = argparse.ArgumentParser(description='GNU Radio script.')
@@ -136,6 +119,3 @@ class Main:
 #    parser.add_argument('-n', '--name', type=str, default="medidas", help='Input for name value')
 #    args = parser.parse_args()
 #    main(lat_val=args.latitude, lon_val=args.longitude, f_val=args.freq, p_val=args.pressure ,g_val=args.gain, n_val=args.name)
-
-if __name__ == '__main__':
-    m = Main()
