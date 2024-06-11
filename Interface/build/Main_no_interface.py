@@ -53,13 +53,6 @@ class Main:
                     txt_file.write(" ".join(medidas))
                     txt_file.write('\n')
                 
-                self.set_altitude(altura)
-                self.set_longitude(datos_gps["longitude"])
-                self.set_latitude(datos_gps["latitude"])
-                self.set_RSSI(level)
-                
-                if self.status == False:
-                    raise Exception("Measurement stopped")
 
             except Exception as e:
                 print(e)
@@ -142,7 +135,7 @@ if __name__ == '__main__':
     g_rx = int(input("Introduzca la ganancia del receptor (dB): "))
     g_tx = int(input("Introduzca la ganancia del transmisor (dB): "))
     lat = float(input("Introduzca la latitud del transmisor (º): "))
-    lon = float(input("Introduzca la longitud del receptor (º): "))
+    lon = float(input("Introduzca la longitud del transmisor (º): "))
     h_tx = float(input("Introduzca la altura del transmisor (m): "))
     h_rx = float(input("Introduzca la altura del receptor (m): "))
     pres = float(input("Introduzca la presión atmosférica a nivel del mar (hPa): "))
