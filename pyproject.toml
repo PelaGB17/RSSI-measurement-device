@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+demobox = ["*.py", "assets/*.png"]
+
+[project]
+name = "demobox-device-emulator"
+version = "0.0.3"
+authors = [
+  { name="Pelayo Garcia Barcena", email="pelayo.garcia@grupotsk.com" },
+]
+description = "Application for controlling LEDs, butons and a graphical interface on a Raspberry Pi."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+		'Development Status :: 3 - Alpha',
+		'Intended Audience :: Developers',
+		'Natural Language :: English',
+		'Operating System :: Unix',
+		'Programming Language :: Python :: 3.0',
+]
+keywords = ["pyModbus",
+]
+dependencies = [
+	"pyModbusTCP>=0.2.1",
+	"Adafruit-Blinka",
+	"adafruit-circuitpython-sht31d",
+	"adafruit-circuitpython-ahtx0",
+	"scipy",
+	"numpy",
+]
+
+[project.scripts]
+demobox = "demobox.Main:start"

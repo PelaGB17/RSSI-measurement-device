@@ -4,8 +4,8 @@
 
 
 from pathlib import Path
-import GPS as gps
-import Main as main
+# import GPS as gps
+# import Main as main
 
 # from tkinter import *
 # Explicit imports to satisfy Flake8
@@ -23,13 +23,15 @@ def relative_to_assets(path: str) -> Path:
 class FullScreenApp:
             
     def __init__(self):    
-        window = Tk()
-        window.geometry("1920x1080")
-        window.configure(bg = "#9CC795")
+        self.window = Tk()
+        self.window.geometry("1920x1080")
+        self.window.configure(bg = "#9CC795")
+        self.window.attributes("-fullscreen", True)
+        self.window.bind("<Escape>", self.close_fullscreen)
 
 
         self.canvas = Canvas(
-            window,
+            self.window,
             bg = "#9CC795",
             height = 1080,
             width = 1920,
@@ -608,8 +610,11 @@ class FullScreenApp:
             font=("Inter Bold", 40 * -1)
         )
         
-        window.resizable(False, False)
-        window.mainloop()
+        self.window.resizable(False, False)
+        self.window.mainloop()
+
+    def close_fullscreen(self, event):
+        self.window.destroy()
 
     def inicio(self):
         self.freq = self.entry_1.get()  #Frecuencia en GHz
