@@ -12,7 +12,7 @@ import Heatmap
 import Representacion
 
         
-def main(self, top_block_cls=GNURadioBlock, lat_val=0, lon_val=0, p_val=1, f_val=0, g_val=20, n_val="medidas", options=None):
+def main(top_block_cls=GNURadioBlock, lat_val=0, lon_val=0, p_val=1, f_val=0, g_val=20, n_val="medidas", options=None):
         self.status = True
         while True:
             tb = top_block_cls(f_val=f_val, g_val=g_val, n_val=n_val)
@@ -67,7 +67,7 @@ def main(self, top_block_cls=GNURadioBlock, lat_val=0, lon_val=0, p_val=1, f_val
                 Representacion.representa_medidas(procesado, config, ruta)
                 os.remove(n_val)
 
-def nivel_de_senal(self):
+def nivel_de_senal():
         top_block_cls=GNURadioBlock
         tb = top_block_cls(f_val=2400000000, g_val=40, n_val="medidas")
         
@@ -86,7 +86,7 @@ def nivel_de_senal(self):
         
         return level            
 
-def create_info_file(self, freq_MHz=2400, g_tx=40, g_ant=0, h_tx=0.3, g_rx=40 ,h_rx=0.3, n_val="medidas"):
+def create_info_file(freq_MHz=2400, g_tx=40, g_ant=0, h_tx=0.3, g_rx=40 ,h_rx=0.3, n_val="medidas"):
         if n_val == "medidas":
             ruta=crear_siguiente_carpeta("/home/rssidev/Desktop/Medidas", "a_prueba")
         else:

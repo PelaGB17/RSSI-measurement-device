@@ -2,13 +2,14 @@
 # https://github.com/ParthJadhav/Tkinter-Designer
 
 from pathlib import Path
+from threading import Thread
 import Main3 as main
 import argparse
 import sys
 import time
 import os
 import signal
-import Interfaz
+import queue
 from GNU_Radio import GNURadioBlock
 from GPS import inicializar_gps, obtener_datos_gps
 from Barometro import inicializar_barometro, obtener_datos_barometro
@@ -33,10 +34,10 @@ class FullScreenApp:
         window = Tk()
         window.geometry("1920x1080")
         window.configure(bg = "#9CC795")
+        self.cola = queue.Queue()
         inicializar_gps()
         self.oled = inicializar_pantalla()
         self.barometro = inicializar_barometro()
-        self.interface = Interfaz.FullScreenApp(self)
 
 
         self.canvas = Canvas(
@@ -591,13 +592,13 @@ class FullScreenApp:
         while True:
             tb = top_block_cls(f_val=f_val, g_val=g_val, n_val=n_val)
             try:
-                def sig_handler(sig=None, frame=None):
-                    tb.stop()
-                    tb.wait()
-                    sys.exit(0)
+                # def sig_handler(sig=None, frame=None):
+                #     tb.stop()
+                #     tb.wait()
+                #     sys.exit(0)
 
-                signal.signal(signal.SIGINT, sig_handler)
-                signal.signal(signal.SIGTERM, sig_handler)
+                # signal.signal(signal.SIGINT, sig_handler)
+                # signal.signal(signal.SIGTERM, sig_handler)
                 
                 tb.start()
                 
@@ -620,25 +621,28 @@ class FullScreenApp:
                     txt_file.write(" ".join(medidas))
                     txt_file.write('\n')
                 
-                self.set_altitude(altura)
-                self.set_longitude(datos_gps["longitude"])
-                self.set_latitude(datos_gps["latitude"])
-                self.set_RSSI(level)
+                self.cola.put(self.set_altitude(altura))
+                self.cola.put(self.set_longitude(datos_gps["longitude"]))
+                self.cola.put(self.set_latitude(datos_gps["latitude"]))
+                self.cola.put(self.set_RSSI(level))
+
+                time.sleep(0.25)
                 
                 if self.status == False:
                     raise Exception("Measurement stopped")
 
             except Exception as e:
                 print(e)
+                
             finally:
                 tb.stop()
                 tb.wait()
-                procesar_archivo(self.ruta, p_val, n_val)
-                datos = self.ruta + n_val + ".txt"
-                procesado = self.ruta + "procesado.txt"
-                config = self.ruta + "config.txt"
-                Heatmap.main(datos, self.ruta)
-                Representacion.representa_medidas(procesado, config, self.ruta)
+                procesar_archivo(self.ruta, n_val)
+                datos = self.ruta + "/" +n_val + ".txt"
+                procesado = self.ruta + "/procesado.txt"
+                config = self.ruta + "/config.txt"
+                # Heatmap.main(datos, self.ruta)
+                # Representacion.representa_medidas(procesado, config, self.ruta)
                 os.remove(n_val)
 
     def inicio(self):
@@ -655,26 +659,31 @@ class FullScreenApp:
         self.freq_Hz=self.freq*1000000000
         self.freq_MHz=self.freq*1000
         self.ruta = main.create_info_file(freq_MHz=self.freq_MHz, g_tx=self.g_tx, g_ant=self.g_ant, h_tx=self.h_tx, g_rx=self.g_rx ,h_rx=self.h_rx, n_val=self.name)
-        self.programa(lat_val=self.lat, lon_val=self.lon, p_val=self.pres, f_val=self.freq, g_val=self.g_rx, n_val=self.name)
+        self.programa_thread=Thread(target = self.programa, kwargs={'lat_val':self.lat, 'lon_val':self.lon, 'p_val':self.pres, 'f_val':self.freq, 'g_val':self.g_rx, 'n_val':self.name})
+        self.programa_thread.start()
 
     def test(self):
         try:
-            datos_test = gps.obtener_datos_gps()
             RSSI = main.nivel_de_senal()
+            self.set_RSSI(str(RSSI)+"dBm")
+
+        except Exception as e:
+            print(e)
+            self.set_RSSI("ERR")
+        try:
+            datos_test = obtener_datos_gps()
             self.set_longitude(str(datos_test['longitude'])+" º")
             self.set_latitude(str(datos_test['latitude'])+" º")
-            # alt = str(datos_test['altitude'])
-            # alt = alt.replace("(","")
-            # alt = alt.replace(")","")
-            # alt = alt.replace(",","")
+            alt = str(datos_test['altitude'])
+            alt = alt.replace("(","")
+            alt = alt.replace(")","")
+            alt = alt.replace(",","")
             self.set_altitude(alt+" m")
-            self.set_RSSI(str(RSSI)+"dBm")
         except Exception as e:
             print(e)
             self.set_longitude("ERR")
             self.set_latitude("ERR")
             self.set_altitude("ERR")
-            self.set_RSSI("ERR")
 
     def stop(self):
         self.status = False

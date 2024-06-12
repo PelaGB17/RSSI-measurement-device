@@ -74,6 +74,9 @@ def main(ruta, ruta_guardado):
     # Cargar los datos
     datos = cargar_datos(ruta)
 
+    if datos[1] is None:
+        pass
+
     if datos is not None:
         # Eliminar filas con NaN (si las hay)
         datos = datos.dropna()

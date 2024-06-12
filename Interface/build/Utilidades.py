@@ -52,7 +52,7 @@ def procesar_archivo(path, n_val):
         with open(path+ "/" + "procesado" + ".txt", 'w') as output_txt_file:
             for line in lines:
                 columns = line.split()
-                output_txt_file.write(f"{columns[0]} {columns[4]} {columns[6]}\n")
+                output_txt_file.write(f"{columns[0]} {columns[4]} {columns[7]}\n")
                 
         kml_header = """<?xml version="1.0" encoding="UTF-8"?>
                     <kml xmlns="http://www.opengis.net/kml/2.2">
