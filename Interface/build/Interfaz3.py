@@ -2,7 +2,6 @@
 # https://github.com/ParthJadhav/Tkinter-Designer
 
 from pathlib import Path
-import GPS as gps
 import Main3 as main
 import argparse
 import sys

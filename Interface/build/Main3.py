@@ -3,7 +3,6 @@ import sys
 import time
 import os
 import signal
-import Interfaz
 from GNU_Radio import GNURadioBlock
 from GPS import inicializar_gps, obtener_datos_gps
 from Barometro import inicializar_barometro, obtener_datos_barometro
