@@ -633,16 +633,16 @@ class FullScreenApp:
 
             except Exception as e:
                 print(e)
-                
-            finally:
-                tb.stop()
-                tb.wait()
                 procesar_archivo(self.ruta, n_val)
                 datos = self.ruta + "/" +n_val + ".txt"
                 procesado = self.ruta + "/procesado.txt"
                 config = self.ruta + "/config.txt"
-                # Heatmap.main(datos, self.ruta)
-                # Representacion.representa_medidas(procesado, config, self.ruta)
+                Heatmap.main(datos, self.ruta)
+                Representacion.representa_medidas(procesado, config, self.ruta)
+                
+            finally:
+                tb.stop()
+                tb.wait()
                 os.remove(n_val)
 
     def inicio(self):
@@ -689,18 +689,22 @@ class FullScreenApp:
         self.status = False
     
     def set_RSSI(self, RSSI):
+        RSSI = str(RSSI) + " dBm"
         item_id = self.canvas.find_withtag("RSSI")
         self.canvas.itemconfig(item_id, text=RSSI) 
 
     def set_longitude(self, longitude):
+        longitude = str(longitude) + " º"
         item_id = self.canvas.find_withtag("longitude")
         self.canvas.itemconfig(item_id, text=longitude) 
 
     def set_latitude(self, latitude):
+        latitude = str(latitude) + " º"
         item_id = self.canvas.find_withtag("latitude")
         self.canvas.itemconfig(item_id, text=latitude) 
 
     def set_altitude(self, altitude):
+        altitude = str(altitude) + " m"
         item_id = self.canvas.find_withtag("altitude")
         self.canvas.itemconfig(item_id, text=altitude) 
 
