@@ -1,6 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import argparse
 
 def representa_medidas(data, config, ruta_guardado):
     # ------------------------- DATOS DE ENTRADA ------------------------------
@@ -131,11 +130,3 @@ def representa_medidas(data, config, ruta_guardado):
     plt.grid(True)
     plt.show()
     plt.savefig(ruta_guardado)
-
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Representa Medidas script.')
-    parser.add_argument('-d', '--data', type=str, default='D:/OneDrive - Universidad de Oviedo/Clase/4_2/TFG/Archivos/All_Files/Medidas/17a_prueba/procesado.txt', help='Data file path')
-    parser.add_argument('-c', '--config', type=str, default='D:/OneDrive - Universidad de Oviedo/Clase/4_2/TFG/Archivos/All_Files/Scripts/Herramientas/data_f24v.txt', help='Config file path')
-    args = parser.parse_args()
-    representa_medidas(args.data, args.config)

@@ -72,7 +72,6 @@ def crear_subplots(datos, ruta_guardado):
 def main():
     # Solicitar al usuario el nombre de la prueba
     prueba = input("Ingrese el nombre de la prueba (1a_Prueba, 2a_Prueba, etc.): ")
-    prueba += "a_Prueba"
 
     # Construir la ruta del archivo medidas.txt
     ruta_datos = os.path.join("Medidas", prueba, "medidas.txt")

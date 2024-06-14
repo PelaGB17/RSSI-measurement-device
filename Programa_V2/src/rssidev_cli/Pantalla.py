@@ -2,7 +2,7 @@ import adafruit_ssd1306
 import busio
 import board
 from PIL import Image, ImageDraw, ImageFont
-from Utilidades import obtener_distancia_gps
+from .Utilidades import obtener_distancia_gps
 
 def inicializar_pantalla():
     try:

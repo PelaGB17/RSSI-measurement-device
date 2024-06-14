@@ -1,0 +1,2 @@
+[console_scripts]
+rssidev_cli = rssidev_cli.Main:start

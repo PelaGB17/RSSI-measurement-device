@@ -2,11 +2,11 @@ import sys
 import time
 import os
 import signal
-from GNU_Radio import GNURadioBlock
-from GPS import inicializar_gps, obtener_datos_gps
-from Barometro import inicializar_barometro, obtener_datos_barometro
-from Pantalla import inicializar_pantalla, mostrar_datos_pantalla
-from Utilidades import obtener_distancia_gps, calcula_altitud, obtener_medidas, procesar_archivo, crear_siguiente_carpeta
+from .GNU_Radio import GNURadioBlock
+from .GPS import inicializar_gps, obtener_datos_gps
+from .Barometro import inicializar_barometro, obtener_datos_barometro
+from .Pantalla import inicializar_pantalla, mostrar_datos_pantalla
+from .Utilidades import obtener_distancia_gps, calcula_altitud, obtener_medidas, procesar_archivo, crear_siguiente_carpeta
 import Heatmap
 import Representacion
 
@@ -15,7 +15,6 @@ class Main:
         inicializar_gps()
         self.oled = inicializar_pantalla()
         self.barometro = inicializar_barometro()
-        self.interfaz = Interfaz.FullScreenApp(self)
         
     def main(self, top_block_cls=GNURadioBlock, lat_val=0, lon_val=0, p_val=1, f_val=0, g_val=20, n_val="medidas", options=None):
         self.status = True
@@ -133,3 +132,20 @@ if __name__ == '__main__':
     m = Main()
     m.create_info_file(freq_MHz=freq_MHz, g_tx=g_tx, g_ant=g_ant, h_tx=h_tx, g_rx=g_rx ,h_rx=h_rx, n_val=name)
     m.main(lat_val=lat, lon_val=lon, p_val=pres, f_val=freq, g_val=g_rx, n_val=name)
+
+def start():
+    freq = float(input("Introduzca la frecuencia de operación (GHz): "))
+    g_rx = int(input("Introduzca la ganancia del receptor (dB): "))
+    g_tx = int(input("Introduzca la ganancia del transmisor (dB): "))
+    lat = float(input("Introduzca la latitud del transmisor (º): "))
+    lon = float(input("Introduzca la longitud del transmisor (º): "))
+    h_tx = float(input("Introduzca la altura del transmisor (m): "))
+    h_rx = float(input("Introduzca la altura del receptor (m): "))
+    pres = float(input("Introduzca la presión atmosférica a nivel del mar (hPa): "))
+    g_ant = int(input("Introduzca la ganancia de las antenas (dB): "))
+    name = input("Introduzca el nombre de la medida (dB): ")
+    freq_Hz=freq*1000000000
+    freq_MHz=freq*1000
+    m = Main()
+    m.create_info_file(freq_MHz=freq_MHz, g_tx=g_tx, g_ant=g_ant, h_tx=h_tx, g_rx=g_rx ,h_rx=h_rx, n_val=name)
+    m.main(lat_val=lat, lon_val=lon, p_val=pres, f_val=freq_Hz, g_val=g_rx, n_val=name)

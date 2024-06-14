@@ -1,5 +1,4 @@
 import gpsd
-import time
 
 def inicializar_gps():
     try:

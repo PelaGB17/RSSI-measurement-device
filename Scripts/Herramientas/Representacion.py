@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import argparse
+import os
 
 def representa_medidas(data, config, ruta_guardado):
     # ------------------------- DATOS DE ENTRADA ------------------------------
@@ -132,10 +132,23 @@ def representa_medidas(data, config, ruta_guardado):
     plt.show()
     plt.savefig(ruta_guardado)
 
+# Función principal
+def main():
+    # Solicitar al usuario el nombre de la prueba
+    prueba = input("Ingrese el nombre de la prueba (1a_Prueba, 2a_Prueba, etc.): ")
+
+    # Construir la ruta del archivo config.txt
+    ruta_config = os.path.join("Medidas", prueba, "config.txt")
+
+    # Construir la ruta del archivo procesado.txt
+    ruta_datos = os.path.join("Medidas", prueba, "procesado.txt")
+    
+    # Ruta donde se guardará el archivo PNG
+    archivo = "Representacion.png"
+    ruta_guardado = os.path.join("Medidas", prueba, archivo)
+
+    representa_medidas(ruta_datos, ruta_config, ruta_guardado)
+
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Representa Medidas script.')
-    parser.add_argument('-d', '--data', type=str, default='D:/OneDrive - Universidad de Oviedo/Clase/4_2/TFG/Archivos/All_Files/Medidas/17a_prueba/procesado.txt', help='Data file path')
-    parser.add_argument('-c', '--config', type=str, default='D:/OneDrive - Universidad de Oviedo/Clase/4_2/TFG/Archivos/All_Files/Scripts/Herramientas/data_f24v.txt', help='Config file path')
-    args = parser.parse_args()
-    representa_medidas(args.data, args.config)
+    main()

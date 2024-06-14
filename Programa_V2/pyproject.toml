@@ -6,15 +6,15 @@ build-backend = "setuptools.build_meta"
 where = ["src"]
 
 [tool.setuptools.package-data]
-demobox = ["*.py", "assets/*.png"]
+rssidev_cli = ["*.py"]
 
 [project]
-name = "demobox-device-emulator"
-version = "0.0.3"
+name = "RSSI-measurement-device"
+version = "0.0.2"
 authors = [
-  { name="Pelayo Garcia Barcena", email="pelayo.garcia@grupotsk.com" },
+  { name="Pelayo Garcia Barcena", email="UO282145@uniovi.es" },
 ]
-description = "Application for controlling LEDs, butons and a graphical interface on a Raspberry Pi."
+description = "Aplicación para el análisis de cobertura mediante medidas de RSSI georreferenciadas."
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
@@ -24,16 +24,22 @@ classifiers = [
 		'Operating System :: Unix',
 		'Programming Language :: Python :: 3.0',
 ]
-keywords = ["pyModbus",
+keywords = ["gnuradio",
 ]
 dependencies = [
-	"pyModbusTCP>=0.2.1",
+	"gnuradio",
 	"Adafruit-Blinka",
-	"adafruit-circuitpython-sht31d",
-	"adafruit-circuitpython-ahtx0",
-	"scipy",
+	"adafruit-circuitpython-bmp280",
+	"adafruit-circuitpython-ssd1306",
+	"pillow",
+	"pandas",
 	"numpy",
+	"geopy",
+	"gpsd-py3",
+	"seaborn",
+	"scipy",
+	"pyproj",
 ]
 
 [project.scripts]
-demobox = "demobox.Main:start"
+rssidev_cli = "rssidev_cli.Main:start"
