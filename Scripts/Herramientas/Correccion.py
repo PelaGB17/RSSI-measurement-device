@@ -15,9 +15,19 @@ def calcular_distancia(lat1, lon1, lat2, lon2):
     return geodesic(coords_1, coords_2).meters
 
 def actualizar_medidas(ruta):
-    presion_nivel_mar = float(input("Introduce la presión a nivel del mar (hPa): "))
-    lat_transmisor = float(input("Introduce la latitud del transmisor: "))
-    lon_transmisor = float(input("Introduce la longitud del transmisor: "))
+    presion_nivel_mar = input("Introduce la presión a nivel del mar (hPa): ")
+    if presion_nivel_mar != "":
+        do_altura = True
+        presion_nivel_mar = float(presion_nivel_mar)
+
+    lat_transmisor = input("Introduce la latitud del transmisor: ")
+    if lat_transmisor != "":
+        do_distancia = True
+        lat_transmisor = float(lat_transmisor)
+    lon_transmisor = input("Introduce la longitud del transmisor: ")
+    if lon_transmisor != "":
+        do_distancia = True
+        lon_transmisor = float(lon_transmisor)
 
     # Construir la ruta del archivo medidas.txt
     ruta_datos = os.path.join("Medidas", ruta, "medidas.txt")
@@ -34,8 +44,10 @@ def actualizar_medidas(ruta):
             lon_receptor = float(row[2])
             presion_atm = float(row[3])
 
-            altura = calcular_altura(presion_nivel_mar, presion_atm)
-            distancia = calcular_distancia(lat_transmisor, lon_transmisor, lat_receptor, lon_receptor)
+            if do_altura:
+                altura = calcular_altura(presion_nivel_mar, presion_atm)
+            if do_distancia:
+                distancia = calcular_distancia(lat_transmisor, lon_transmisor, lat_receptor, lon_receptor)
 
             row[4] = f"{distancia:.2f}"  # Actualizar distancia en la columna 5
             row[5] = f"{altura:.2f}"    # Actualizar altura en la columna 6
