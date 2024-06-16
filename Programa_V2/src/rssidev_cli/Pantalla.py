@@ -2,7 +2,7 @@ import adafruit_ssd1306
 import busio
 import board
 from PIL import Image, ImageDraw, ImageFont
-from .Utilidades import obtener_distancia_gps
+from . import Utilidades
 
 def inicializar_pantalla():
     try:
@@ -53,8 +53,8 @@ def mostrar_datos_pantalla(display, data):
             display["first_coordinate_received"] = True
 
         # Calculate distance in meters from the central position
-        dist_lat = obtener_distancia_gps(display["central_latitude"], display["central_longitude"], data["latitude"], display["central_longitude"])
-        dist_lon = obtener_distancia_gps(display["central_latitude"], display["central_longitude"], display["central_latitude"], data["longitude"])
+        dist_lat = Utilidades.obtener_distancia_gps(display["central_latitude"], display["central_longitude"], data["latitude"], display["central_longitude"])
+        dist_lon = Utilidades.obtener_distancia_gps(display["central_latitude"], display["central_longitude"], display["central_latitude"], data["longitude"])
 
         # Convert distances to pixels and store in list
         x = int((dist_lon + 100) * (display["oled"].width / 200))

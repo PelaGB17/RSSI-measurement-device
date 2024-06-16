@@ -27,8 +27,6 @@ classifiers = [
 keywords = ["gnuradio",
 ]
 dependencies = [
-	"gnuradio",
-	"tkinter",
 	"Adafruit-Blinka",
 	"adafruit-circuitpython-bmp280",
 	"adafruit-circuitpython-ssd1306",
@@ -43,4 +41,4 @@ dependencies = [
 ]
 
 [project.scripts]
-rssidev_gui = "rssidev_gui.Interface:start"
+rssidev_gui = "rssidev_gui.Interfaz:start"

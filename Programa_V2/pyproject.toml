@@ -27,7 +27,6 @@ classifiers = [
 keywords = ["gnuradio",
 ]
 dependencies = [
-	"gnuradio",
 	"Adafruit-Blinka",
 	"adafruit-circuitpython-bmp280",
 	"adafruit-circuitpython-ssd1306",

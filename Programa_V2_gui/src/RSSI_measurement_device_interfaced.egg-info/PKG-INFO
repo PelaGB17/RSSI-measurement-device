@@ -11,8 +11,6 @@ Classifier: Operating System :: Unix
 Classifier: Programming Language :: Python :: 3.0
 Requires-Python: >=3.8
 Description-Content-Type: text/markdown
-Requires-Dist: gnuradio
-Requires-Dist: tkinter
 Requires-Dist: Adafruit-Blinka
 Requires-Dist: adafruit-circuitpython-bmp280
 Requires-Dist: adafruit-circuitpython-ssd1306
