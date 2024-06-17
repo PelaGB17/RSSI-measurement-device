@@ -13,15 +13,29 @@ sudo apt-get install -y gnuradio
 sudo apt-get install -y libuhd-dev uhd-host
 
 # Descarga las imagenes de UHD
-uhd_images_downloader
-
-# Instala Git
-sudo apt install -y git
+sudo uhd_images_downloader
 
 # Instala Visual Studio Code
 sudo apt install -y code
 
 # Instala los programas con y sin interfaz
-sudo pip install RSSI-measurement-device/Programa_V2_gui/dist/rssi_measurement_device_interfaced-0.0.2.whl --break-system-packages
+sudo pip install /home/rssidev/RSSI-measurement-device/Programa_V2_gui/dist/RSSI_measurement_device_interfaced-0.0.2-py3-none-any.whl --break-system-packages
 
-sudo pip install RSSI-measurement-device/Programa_V2/dist/rssi_measurement_device-0.0.2.whl --break-system-packages
+sudo pip install /home/rssidev/RSSI-measurement-device/Programa_V2/dist/RSSI_measurement_device-0.0.2-py3-none-any.whl --break-system-packages
+
+mkdir /Desktop/Medidas
+
+# Instala gpsd
+sudo apt install -y scons libncurses-dev pps-tools git-core asciidoctor python3-matplotlib build-essential manpages-dev pkg-config python3-distutils
+
+wget http://download.savannah.gnu.org/releases/gpsd/gpsd-3.25.tar.gz
+
+tar -xzf gpsd-3.25.tar.gz
+
+cd gpsd-3.25/
+
+sudo scons
+
+sudo scons install
+
+sudo reboot

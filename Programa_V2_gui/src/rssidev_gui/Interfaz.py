@@ -188,6 +188,7 @@ class FullScreenApp:
                 config = self.ruta + "/config.txt"
                 Heatmap.main(datos, self.ruta)
                 Representacion.representa_medidas(procesado, config, self.ruta)
+                break
                 
             finally:
                 tb.stop()
@@ -195,16 +196,16 @@ class FullScreenApp:
                 os.remove(n_val)
 
     def inicio(self):
-        self.freq = float(self.entry_10.get())  #Frecuencia en GHz
-        self.g_rx = int(self.entry_9.get())
-        self.g_tx = int(self.entry_8.get())
-        self.lat = float(self.entry_7.get())
-        self.lon = float(self.entry_6.get())
-        self.h_tx = float(self.entry_5.get())
-        self.h_rx = float(self.entry_4.get())
-        self.pres = float(self.entry_3.get())
-        self.g_ant = int(self.entry_2.get())
-        self.name = self.entry_1.get()
+        self.freq = float(self.entries[0].get())  # Frecuencia en GHz
+        self.g_rx = int(self.entries[1].get())
+        self.g_tx = int(self.entries[2].get())
+        self.lat = float(self.entries[3].get())
+        self.lon = float(self.entries[4].get())
+        self.h_tx = float(self.entries[5].get())
+        self.h_rx = float(self.entries[6].get())
+        self.pres = float(self.entries[7].get())
+        self.g_ant = int(self.entries[8].get())
+        self.name = self.entries[9].get()
         self.freq_Hz=self.freq*1000000000
         self.freq_MHz=self.freq*1000
         self.ruta = main.create_info_file(freq_MHz=self.freq_MHz, g_tx=self.g_tx, g_ant=self.g_ant, h_tx=self.h_tx, g_rx=self.g_rx ,h_rx=self.h_rx, n_val=self.name)
