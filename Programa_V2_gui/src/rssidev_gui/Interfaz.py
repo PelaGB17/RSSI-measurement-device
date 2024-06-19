@@ -206,8 +206,8 @@ class FullScreenApp:
         self.pres = float(self.entries[7].get())
         self.g_ant = int(self.entries[8].get())
         self.name = self.entries[9].get()
-        self.freq_Hz=self.freq*1000000000
-        self.freq_MHz=self.freq*1000
+        self.freq_Hz=self.freq*1e9
+        self.freq_MHz=self.freq*1e3
         self.ruta = main.create_info_file(freq_MHz=self.freq_MHz, g_tx=self.g_tx, g_ant=self.g_ant, h_tx=self.h_tx, g_rx=self.g_rx ,h_rx=self.h_rx, n_val=self.name)
         self.programa_thread=Thread(target = self.programa, kwargs={'lat_val':self.lat, 'lon_val':self.lon, 'p_val':self.pres, 'f_val':self.freq_Hz, 'g_val':self.g_rx, 'n_val':self.name})
         self.programa_thread.start()
