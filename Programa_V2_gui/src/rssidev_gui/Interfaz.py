@@ -3,22 +3,16 @@
 
 from pathlib import Path
 from threading import Thread
-import Main as main
 import time
 import os
 import queue
-from GNU_Radio import GNURadioBlock
-from GPS import inicializar_gps, obtener_datos_gps
-from Barometro import inicializar_barometro, obtener_datos_barometro
-from Pantalla import inicializar_pantalla, mostrar_datos_pantalla
-from Utilidades import obtener_distancia_gps, calcula_altitud, obtener_medidas, procesar_archivo
-import Heatmap
-import Representacion
+from . import Main as main
+from . import GNU_Radio, GPS, Barometro, Pantalla, Utilidades, Heatmap, Representacion
 from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage
 
 
 OUTPUT_PATH = Path(__file__).parent
-ASSETS_PATH = OUTPUT_PATH / Path(r"/usr/local/lib/python3.9/dist-packages/rssidev_gui/assets")
+ASSETS_PATH = OUTPUT_PATH / Path(r"/usr/local/lib/python3.11/dist-packages/rssidev_gui/assets")
 
 
 def relative_to_assets(path: str) -> Path:
@@ -36,6 +30,10 @@ class FullScreenApp:
         self.setup_texts()
         self.setup_entries()
         self.window.resizable(False, False)
+        self.cola = queue.Queue()
+        GPS.inicializar_gps()
+        self.oled = Pantalla.inicializar_pantalla()
+        self.barometro = Barometro.inicializar_barometro()
         self.window.mainloop()
 
     def setup_canvas(self):
@@ -145,31 +143,24 @@ class FullScreenApp:
             entry.place(x=340.0, y=entry_y, width=250.0, height=30.0)
             self.entries.append(entry)
 
-    def programa(self, top_block_cls=GNURadioBlock, lat_val=0, lon_val=0, p_val=1, f_val=0, g_val=20, n_val="medidas", options=None):
+    def programa(self, top_block_cls=GNU_Radio.GNURadioBlock, lat_val=0, lon_val=0, p_val=1, f_val=0, g_val=20, n_val="medidas", options=None):
         self.status = True
         while True:
             tb = top_block_cls(f_val=f_val, g_val=g_val, n_val=n_val)
             try:
-                # def sig_handler(sig=None, frame=None):
-                #     tb.stop()
-                #     tb.wait()
-                #     sys.exit(0)
-
-                # signal.signal(signal.SIGINT, sig_handler)
-                # signal.signal(signal.SIGTERM, sig_handler)
                 
                 tb.start()
                 
-                datos_gps = obtener_datos_gps()
-                distancia = obtener_distancia_gps(lat_val, lon_val, datos_gps['latitude'], datos_gps['longitude'])
-                presion = obtener_datos_barometro(self.barometro)
-                altura = calcula_altitud(presion, p_val)
-                mostrar_datos_pantalla(self.oled, datos_gps)
+                datos_gps = GPS.obtener_datos_gps()
+                distancia = Utilidades.obtener_distancia_gps(lat_val, lon_val, datos_gps['latitude'], datos_gps['longitude'])
+                presion = Barometro.obtener_datos_barometro(self.barometro)
+                altura = Utilidades.calcula_altitud(presion, p_val)
+                Pantalla.mostrar_datos_pantalla(self.oled, datos_gps)
                 timestamp = time.strftime("%H%M%S")
                            
                 tb.wait()
                 
-                level=obtener_medidas(n_val)
+                level=Utilidades.obtener_medidas(n_val)
                 tb.stop()
                 
                 medidas = [f" {level}", f" {datos_gps['latitude']}", f" {datos_gps['longitude']}", f" {presion}", f" {distancia}", f"{altura}", f"{datos_gps['altitude']}" ,f"{timestamp}"]
@@ -191,12 +182,13 @@ class FullScreenApp:
 
             except Exception as e:
                 print(e)
-                procesar_archivo(self.ruta, n_val)
+                Utilidades.procesar_archivo(self.ruta, n_val)
                 datos = self.ruta + "/" +n_val + ".txt"
                 procesado = self.ruta + "/procesado.txt"
                 config = self.ruta + "/config.txt"
                 Heatmap.main(datos, self.ruta)
                 Representacion.representa_medidas(procesado, config, self.ruta)
+                break
                 
             finally:
                 tb.stop()
@@ -204,18 +196,18 @@ class FullScreenApp:
                 os.remove(n_val)
 
     def inicio(self):
-        self.freq = float(self.entry_10.get())  #Frecuencia en GHz
-        self.g_rx = int(self.entry_9.get())
-        self.g_tx = int(self.entry_8.get())
-        self.lat = float(self.entry_7.get())
-        self.lon = float(self.entry_6.get())
-        self.h_tx = float(self.entry_5.get())
-        self.h_rx = float(self.entry_4.get())
-        self.pres = float(self.entry_3.get())
-        self.g_ant = int(self.entry_2.get())
-        self.name = self.entry_1.get()
-        self.freq_Hz=self.freq*1000000000
-        self.freq_MHz=self.freq*1000
+        self.freq = float(self.entries[0].get())  # Frecuencia en GHz
+        self.g_rx = int(self.entries[1].get())
+        self.g_tx = int(self.entries[2].get())
+        self.lat = float(self.entries[3].get())
+        self.lon = float(self.entries[4].get())
+        self.h_tx = float(self.entries[5].get())
+        self.h_rx = float(self.entries[6].get())
+        self.pres = float(self.entries[7].get())
+        self.g_ant = int(self.entries[8].get())
+        self.name = self.entries[9].get()
+        self.freq_Hz=self.freq*1e9
+        self.freq_MHz=self.freq*1e3
         self.ruta = main.create_info_file(freq_MHz=self.freq_MHz, g_tx=self.g_tx, g_ant=self.g_ant, h_tx=self.h_tx, g_rx=self.g_rx ,h_rx=self.h_rx, n_val=self.name)
         self.programa_thread=Thread(target = self.programa, kwargs={'lat_val':self.lat, 'lon_val':self.lon, 'p_val':self.pres, 'f_val':self.freq_Hz, 'g_val':self.g_rx, 'n_val':self.name})
         self.programa_thread.start()
@@ -229,7 +221,7 @@ class FullScreenApp:
             print(e)
             self.set_RSSI("ERR")
         try:
-            datos_test = obtener_datos_gps()
+            datos_test = GPS.obtener_datos_gps()
             self.set_longitude(str(datos_test['longitude']))
             self.set_latitude(str(datos_test['latitude']))
             alt = str(datos_test['altitude'])

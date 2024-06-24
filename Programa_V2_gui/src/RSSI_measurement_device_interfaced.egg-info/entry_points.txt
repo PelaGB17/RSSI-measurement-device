@@ -1,2 +1,2 @@
 [console_scripts]
-rssidev_gui = rssidev_gui.Interface:start
+rssidev_gui = rssidev_gui.Interfaz:start

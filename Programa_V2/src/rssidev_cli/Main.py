@@ -2,21 +2,15 @@ import sys
 import time
 import os
 import signal
-from .GNU_Radio import GNURadioBlock
-from .GPS import inicializar_gps, obtener_datos_gps
-from .Barometro import inicializar_barometro, obtener_datos_barometro
-from .Pantalla import inicializar_pantalla, mostrar_datos_pantalla
-from .Utilidades import obtener_distancia_gps, calcula_altitud, obtener_medidas, procesar_archivo, crear_siguiente_carpeta
-import Heatmap
-import Representacion
+from . import GNU_Radio, GPS, Barometro, Pantalla, Utilidades, Representacion, Heatmap
 
 class Main:
     def __init__(self):
-        inicializar_gps()
-        self.oled = inicializar_pantalla()
-        self.barometro = inicializar_barometro()
+        GPS.inicializar_gps()
+        self.oled = Pantalla.inicializar_pantalla()
+        self.barometro = Barometro.inicializar_barometro()
         
-    def main(self, top_block_cls=GNURadioBlock, lat_val=0, lon_val=0, p_val=1, f_val=0, g_val=20, n_val="medidas", options=None):
+    def main(self, top_block_cls=GNU_Radio.GNURadioBlock, lat_val=0, lon_val=0, p_val=1, f_val=0, g_val=20, n_val="medidas", options=None):
         self.status = True
         while True:
             tb = top_block_cls(f_val=f_val, g_val=g_val, n_val=n_val)
@@ -31,16 +25,16 @@ class Main:
                 
                 tb.start()
                 
-                datos_gps = obtener_datos_gps()
-                distancia = obtener_distancia_gps(lat_val, lon_val, datos_gps['latitude'], datos_gps['longitude'])
-                presion = obtener_datos_barometro(self.barometro)
-                altura = calcula_altitud(presion, p_val)
-                mostrar_datos_pantalla(self.oled, datos_gps)
+                datos_gps = GPS.obtener_datos_gps()
+                distancia = Utilidades.obtener_distancia_gps(lat_val, lon_val, datos_gps['latitude'], datos_gps['longitude'])
+                presion = Barometro.obtener_datos_barometro(self.barometro)
+                altura = Utilidades.calcula_altitud(presion, p_val)
+                Pantalla.mostrar_datos_pantalla(self.oled, datos_gps)
                 timestamp = time.strftime("%H%M%S")
                            
                 tb.wait()
                 
-                level=obtener_medidas(n_val)
+                level=Utilidades.obtener_medidas(n_val)
                 tb.stop()
                 
                 medidas= [f" {level}", f" {datos_gps['latitude']}", f" {datos_gps['longitude']}", f" {presion}", f" {distancia}", f"{altura}", f"{datos_gps['altitude']}" ,f"{timestamp}"]
@@ -53,7 +47,7 @@ class Main:
 
             except Exception as e:
                 print(e)
-                procesar_archivo(ruta, p_val, n_val)
+                Utilidades.procesar_archivo(ruta, p_val, n_val)
                 datos = ruta + n_val + ".txt"
                 procesado = ruta + "procesado.txt"
                 config = ruta + "config.txt"
@@ -65,7 +59,7 @@ class Main:
                 os.remove(n_val)
 
     def nivel_de_senal(self):
-        top_block_cls=GNURadioBlock
+        top_block_cls=Utilidades.GNURadioBlock
         tb = top_block_cls(f_val=2400000000, g_val=40, n_val="medidas")
         
         def sig_handler(sig=None, frame=None):
@@ -78,7 +72,7 @@ class Main:
                 
         tb.start()
         tb.wait()
-        level=obtener_medidas("medidas")
+        level=Utilidades.obtener_medidas("medidas")
         tb.stop()
         
         return level            
@@ -86,7 +80,7 @@ class Main:
     def create_info_file(self, freq_MHz=2400, g_tx=40, g_ant=0, h_tx=0.3, g_rx=40 ,h_rx=0.3, n_val="medidas"):
         global ruta
         if n_val == "medidas":
-            ruta=crear_siguiente_carpeta("/home/rssidev/Desktop/Medidas", "a_prueba")
+            ruta=Utilidades.crear_siguiente_carpeta("/home/rssidev/Desktop/Medidas", "a_prueba")
         else:
             ruta=os.path.join("/home/rssidev/Desktop/Medidas/",n_val)
             os.mkdir(ruta)

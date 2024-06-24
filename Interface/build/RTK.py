@@ -266,7 +266,7 @@ class NtripClient(object):
             
 def RTK_Init():
     ntripArgs = {}
-    ntripArgs['user'] = "pelagb:pe20layo02GABA"
+    ntripArgs['user'] = "xxxxx:xxxxxx"
     ntripArgs['caster'] = "192.148.213.42"
     ntripArgs['port'] = 2101
     ntripArgs['mountpoint'] = VRS3M

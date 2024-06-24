@@ -138,14 +138,14 @@ def main():
     prueba = input("Ingrese el nombre de la prueba (1a_Prueba, 2a_Prueba, etc.): ")
 
     # Construir la ruta del archivo config.txt
-    ruta_config = os.path.join("Medidas", prueba, "config.txt")
+    ruta_config = os.path.join("/home/rssidev/Desktop/Medidas", prueba, "config.txt")
 
     # Construir la ruta del archivo procesado.txt
-    ruta_datos = os.path.join("Medidas", prueba, "procesado.txt")
+    ruta_datos = os.path.join("/home/rssidev/Desktop/Medidas", prueba, "procesado.txt")
     
     # Ruta donde se guardará el archivo PNG
     archivo = "Representacion.png"
-    ruta_guardado = os.path.join("Medidas", prueba, archivo)
+    ruta_guardado = os.path.join("/home/rssidev/Desktop/Medidas", prueba, archivo)
 
     representa_medidas(ruta_datos, ruta_config, ruta_guardado)
 
