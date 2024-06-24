@@ -1,4 +1,6 @@
 from geopy.distance import geodesic
+import  tkinter as tk
+import tkinter.filedialog
 import os
 import math
 import csv
@@ -61,5 +63,5 @@ def actualizar_medidas(ruta):
 
 
 if __name__ == "__main__":
-    ruta = input("Ingrese el nombre de la prueba (1a_Prueba, 2a_Prueba, etc.): ")
+    ruta = tk.filedialog.askdirectory()
     actualizar_medidas(ruta)
