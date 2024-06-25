@@ -121,8 +121,8 @@ if __name__ == '__main__':
     pres = float(input("Introduzca la presión atmosférica a nivel del mar (hPa): "))
     g_ant = int(input("Introduzca la ganancia de las antenas (dB): "))
     name = input("Introduzca el nombre de la medida (dB): ")
-    freq_Hz=freq*1000000000
-    freq_MHz=freq*1000
+    freq_Hz=freq*1e9
+    freq_MHz=freq*1e3
     m = Main()
     m.create_info_file(freq_MHz=freq_MHz, g_tx=g_tx, g_ant=g_ant, h_tx=h_tx, g_rx=g_rx ,h_rx=h_rx, n_val=name)
     m.main(lat_val=lat, lon_val=lon, p_val=pres, f_val=freq, g_val=g_rx, n_val=name)
@@ -138,8 +138,8 @@ def start():
     pres = float(input("Introduzca la presión atmosférica a nivel del mar (hPa): "))
     g_ant = int(input("Introduzca la ganancia de las antenas (dB): "))
     name = input("Introduzca el nombre de la medida (dB): ")
-    freq_Hz=freq*1000000000
-    freq_MHz=freq*1000
+    freq_Hz=freq*1e9
+    freq_MHz=freq*1e3
     m = Main()
     m.create_info_file(freq_MHz=freq_MHz, g_tx=g_tx, g_ant=g_ant, h_tx=h_tx, g_rx=g_rx ,h_rx=h_rx, n_val=name)
     m.main(lat_val=lat, lon_val=lon, p_val=pres, f_val=freq_Hz, g_val=g_rx, n_val=name)
