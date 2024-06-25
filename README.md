@@ -69,8 +69,8 @@ sudo gpsd -D3 -N /dev/ttyS0 ntrip://usuario@servidor/punto_de_montaje
 Una vez instalado el programa y las dependencias, existen dos formas de utilizar el programa:
 
 ```
-1. `sudo rssidev-cli`
-2. `sudo rssidev-gui`
+1. sudo rssidev-cli
+2. sudo rssidev-gui
 ```
 
 El comando (1) lanzará el programa sin interfaz gráfica, de modo que el programa irá pidiendo al usuario los parámetros necesarios para el funcionamiento.
