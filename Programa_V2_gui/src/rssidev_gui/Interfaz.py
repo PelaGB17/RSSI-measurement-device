@@ -191,6 +191,7 @@ class FullScreenApp:
                 config = self.ruta + "/config.txt"
                 Heatmap.main(datos, self.ruta)
                 Representacion.representa_medidas(procesado, config, self.ruta)
+                os.remove(n_val)
                 break
                 
             finally:

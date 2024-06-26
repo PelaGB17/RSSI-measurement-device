@@ -86,6 +86,7 @@ class Main:
                 config = ruta + "config.txt"
                 Heatmap.main(datos, ruta)
                 Representacion.representa_medidas(procesado, config, ruta)
+                os.remove(n_val)
             finally:
                 tb.stop()
                 tb.wait()
