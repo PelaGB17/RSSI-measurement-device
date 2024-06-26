@@ -207,7 +207,7 @@ class FullScreenApp:
         self.h_tx = float(self.entries[5].get())
         self.h_rx = float(self.entries[6].get())
         self.pres = float(self.entries[7].get())
-        self.g_ant = int(self.entries[8].get())
+        self.g_ant = float(self.entries[8].get())
         self.name = self.entries[9].get()
         self.freq_Hz=self.freq*1e9
         self.freq_MHz=self.freq*1e3
@@ -242,21 +242,25 @@ class FullScreenApp:
         self.status = False
     
     def set_RSSI(self, RSSI):
+        RSSI = round(float(RSSI), 4)
         RSSI = str(RSSI) + " dBm"
         item_id = self.canvas.find_withtag("RSSI")
         self.canvas.itemconfig(item_id, text=RSSI) 
 
     def set_longitude(self, longitude):
+        longitude = round(float(longitude), 4)
         longitude = str(longitude) + " º"
         item_id = self.canvas.find_withtag("longitude")
         self.canvas.itemconfig(item_id, text=longitude) 
 
     def set_latitude(self, latitude):
+        latitude = round(float(latitude), 4)
         latitude = str(latitude) + " º"
         item_id = self.canvas.find_withtag("latitude")
         self.canvas.itemconfig(item_id, text=latitude) 
 
     def set_altitude(self, altitude):
+        altitude = round(float(altitude), 4)
         altitude = str(altitude) + " m"
         item_id = self.canvas.find_withtag("altitude")
         self.canvas.itemconfig(item_id, text=altitude) 
