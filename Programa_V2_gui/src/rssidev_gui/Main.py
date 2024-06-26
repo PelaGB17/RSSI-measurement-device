@@ -5,9 +5,9 @@ import os
 import signal
 from . import GNU_Radio, Utilidades
 
-def nivel_de_senal():
+def nivel_de_senal(f_val=2400000000, g_val=40):
         top_block_cls=GNU_Radio.GNURadioBlock
-        tb = top_block_cls(f_val=2400000000, g_val=40, n_val="medidas")
+        tb = top_block_cls(f_val, g_val, n_val="medidas")
         
         def sig_handler(sig=None, frame=None):
             tb.stop()
@@ -20,9 +20,43 @@ def nivel_de_senal():
         tb.start()
         tb.wait()
         level=Utilidades.obtener_medidas("medidas")
+
         tb.stop()
+
+        level = level + obtener_calibracion(g_val, f_val)
         
-        return level            
+        return level 
+
+def obtener_calibracion(g_val = 40, f_val = 2.4e9):
+        Ganancia_rx = [
+        [10.91, -5.89, -14.8, -26.30],
+        [14.17, -0.23, -10.77, -18.02],
+        [9.93, -7.09, -16.6, -26.05],
+        [15.38, -0.25, -8.9, -17.5]
+        ]
+
+        if g_val == 0:
+            if f_val == 2.3e3 or f_val == 2.4e3:
+                cal_off = Ganancia_rx[2][0]
+            else:
+                cal_off = Ganancia_rx[3][0]
+        elif g_val == 20:
+            if f_val == 2.3e3 or f_val == 2.4e3:
+                cal_off = Ganancia_rx[2][1]
+            else:
+                cal_off = Ganancia_rx[3][1]
+        elif g_val == 30:
+            if f_val == 2.3e3 or f_val == 2.4e3:
+                cal_off = Ganancia_rx[2][2]
+            else:
+                cal_off = Ganancia_rx[3][2]
+        else:
+            if f_val == 2.3e3 or f_val == 2.4e3:
+                cal_off = Ganancia_rx[2][3]
+            else:
+                cal_off = Ganancia_rx[3][3]
+        
+        return cal_off + 6
 
 def create_info_file(freq_MHz=2400, g_tx=40, g_ant=0, h_tx=0.3, g_rx=40 ,h_rx=0.3, n_val="medidas"):
         if n_val == "medidas":

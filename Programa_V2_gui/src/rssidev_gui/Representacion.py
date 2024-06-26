@@ -33,8 +33,6 @@ def representa_medidas(data, config, ruta_guardado):
     # Potencia transmitida por el USRP en función del valor configurado para
     # la ganancia, según datos recabados de la calibración.
 
-    Pmed_1_2G3 = [-52.1, -42, -32, -21.9, -11.9, -1.8, 7.6];      # B210, 2.4 GHz
-    Pmed_1_5G = [-53.8, -43.6, -33.6, -23.7, -13.7, -3.7, 6.1];   # B210, 5 GHz
     Pmed_2_2G3 = [-51.2, -41.1, -31, -20.9, -10.9, -1.0, 8.6];    # B200mini, 2.4 GHz
     Pmed_2_5G = [-54.3, -44.3, -34.3, -24.4, -14.4, -4.3, 5.7];   # B200mini, 5 GHz
     Ganancia_tx = list(range(20, 81, 10))

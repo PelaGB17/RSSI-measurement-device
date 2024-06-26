@@ -9,9 +9,41 @@ class Main:
         GPS.inicializar_gps()
         self.oled = Pantalla.inicializar_pantalla()
         self.barometro = Barometro.inicializar_barometro()
+
+    def obtener_calibracion(g_val = 40, f_val = 2.4e9):
+        Ganancia_rx = [
+        [10.91, -5.89, -14.8, -26.30],
+        [14.17, -0.23, -10.77, -18.02],
+        [9.93, -7.09, -16.6, -26.05],
+        [15.38, -0.25, -8.9, -17.5]
+        ]
+
+        if g_val == 0:
+            if f_val == 2.3e3 or f_val == 2.4e3:
+                cal_off = Ganancia_rx[2][0]
+            else:
+                cal_off = Ganancia_rx[3][0]
+        elif g_val == 20:
+            if f_val == 2.3e3 or f_val == 2.4e3:
+                cal_off = Ganancia_rx[2][1]
+            else:
+                cal_off = Ganancia_rx[3][1]
+        elif g_val == 30:
+            if f_val == 2.3e3 or f_val == 2.4e3:
+                cal_off = Ganancia_rx[2][2]
+            else:
+                cal_off = Ganancia_rx[3][2]
+        else:
+            if f_val == 2.3e3 or f_val == 2.4e3:
+                cal_off = Ganancia_rx[2][3]
+            else:
+                cal_off = Ganancia_rx[3][3]
+        
+        return cal_off + 6
         
     def main(self, top_block_cls=GNU_Radio.GNURadioBlock, lat_val=0, lon_val=0, p_val=1, f_val=0, g_val=20, n_val="medidas", options=None):
         self.status = True
+        self.cal_off = self.obtener_calibracion(g_val, f_val)
         while True:
             tb = top_block_cls(f_val=f_val, g_val=g_val, n_val=n_val)
             try:
@@ -35,9 +67,10 @@ class Main:
                 tb.wait()
                 
                 level=Utilidades.obtener_medidas(n_val)
+                real_level = level + self.cal_off
                 tb.stop()
                 
-                medidas= [f" {level}", f" {datos_gps['latitude']}", f" {datos_gps['longitude']}", f" {presion}", f" {distancia}", f"{altura}", f"{datos_gps['altitude']}" ,f"{timestamp}"]
+                medidas= [f" {level}", f" {datos_gps['latitude']}", f" {datos_gps['longitude']}", f" {presion}", f" {distancia}", f"{altura}", f"{datos_gps['altitude']}" ,f"{timestamp}", f"{real_level}"]
                 print(medidas)
                 
                 with open(ruta + "/" + n_val + ".txt", 'a') as txt_file:

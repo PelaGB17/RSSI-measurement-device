@@ -145,6 +145,7 @@ class FullScreenApp:
 
     def programa(self, top_block_cls=GNU_Radio.GNURadioBlock, lat_val=0, lon_val=0, p_val=1, f_val=0, g_val=20, n_val="medidas", options=None):
         self.status = True
+        self.cal_off = main.obtener_calibracion(g_val, f_val)
         while True:
             tb = top_block_cls(f_val=f_val, g_val=g_val, n_val=n_val)
             try:
@@ -160,10 +161,12 @@ class FullScreenApp:
                            
                 tb.wait()
                 
-                level=Utilidades.obtener_medidas(n_val)
+                level = Utilidades.obtener_medidas(n_val)
+                real_level = level + self.cal_off
+
                 tb.stop()
                 
-                medidas = [f" {level}", f" {datos_gps['latitude']}", f" {datos_gps['longitude']}", f" {presion}", f" {distancia}", f"{altura}", f"{datos_gps['altitude']}" ,f"{timestamp}"]
+                medidas = [f" {level}", f" {datos_gps['latitude']}", f" {datos_gps['longitude']}", f" {presion}", f" {distancia}", f"{altura}", f"{datos_gps['altitude']}" ,f"{timestamp}", f"{real_level}"]
                 print(medidas)
                 
                 with open(self.ruta + "/" + n_val + ".txt", 'a') as txt_file:
@@ -173,7 +176,7 @@ class FullScreenApp:
                 self.cola.put(self.set_altitude(altura))
                 self.cola.put(self.set_longitude(datos_gps["longitude"]))
                 self.cola.put(self.set_latitude(datos_gps["latitude"]))
-                self.cola.put(self.set_RSSI(level))
+                self.cola.put(self.set_RSSI(real_level))
 
                 time.sleep(0.25)
                 

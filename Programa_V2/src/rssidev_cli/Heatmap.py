@@ -38,7 +38,7 @@ def crear_subplots(datos, ruta_guardado):
     
     # Interpolar los valores de nivel de señal y altura en la malla
     Z_signal = griddata((datos['x'], datos['y']), datos[0], (X, Y), method='linear')
-    Z_height = griddata((datos['x'], datos['y']), datos[5], (X, Y), method='linear')
+    Z_height = griddata((datos['x'], datos['y']), datos[8], (X, Y), method='linear')
     
     # Crear los subplots
     fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(20, 10))
