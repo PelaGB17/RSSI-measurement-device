@@ -74,11 +74,11 @@ def main():
     prueba = input("Ingrese el nombre de la prueba (1a_Prueba, 2a_Prueba, etc.): ")
 
     # Construir la ruta del archivo medidas.txt
-    ruta_datos = os.path.join("Medidas", prueba, "medidas.txt")
+    ruta_datos = os.path.join("/home/rssidev/Desktop/Medidas", prueba, "medidas.txt")
     
     # Ruta donde se guardará el archivo PNG
     archivo = prueba + ".png"
-    ruta_guardado = os.path.join("Medidas", prueba, archivo)
+    ruta_guardado = os.path.join("/home/rssidev/Desktop/Medidas", prueba, archivo)
 
     # Cargar los datos
     datos = cargar_datos(ruta_datos)
