@@ -6,7 +6,7 @@
 % Line 6: Altura de las antenas Rx (m).
 2400
 80
-1.5
-1.07
+2.5
+0.35
 40
-0.3
+0.4

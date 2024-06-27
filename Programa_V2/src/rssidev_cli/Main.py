@@ -73,7 +73,7 @@ class Main:
                 medidas= [f" {level}", f" {datos_gps['latitude']}", f" {datos_gps['longitude']}", f" {presion}", f" {distancia}", f"{altura}", f"{datos_gps['altitude']}" ,f"{timestamp}", f"{real_level}"]
                 print(medidas)
                 
-                with open(ruta + "/" + n_val + ".txt", 'a') as txt_file:
+                with open(ruta + "/" + "medidas.txt", 'a') as txt_file:
                     txt_file.write(" ".join(medidas))
                     txt_file.write('\n')
                 
@@ -81,7 +81,7 @@ class Main:
             except Exception as e:
                 print(e)
                 Utilidades.procesar_archivo(ruta, p_val, n_val)
-                datos = ruta + n_val + ".txt"
+                datos = ruta + "medidas.txt"
                 procesado = ruta + "procesado.txt"
                 config = ruta + "config.txt"
                 Heatmap.main(datos, ruta)

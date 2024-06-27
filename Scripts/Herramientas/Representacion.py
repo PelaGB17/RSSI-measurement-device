@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import os
+import tkinter.filedialog
 
 def representa_medidas(data, config, ruta_guardado):
     # ------------------------- DATOS DE ENTRADA ------------------------------
@@ -130,22 +131,28 @@ def representa_medidas(data, config, ruta_guardado):
     plt.ylim([-100, -20])
     plt.grid(True)
     plt.show()
-    plt.savefig(ruta_guardado)
+    # plt.savefig(ruta_guardado)
 
 # Función principal
 def main():
+
+    ruta =  tkinter.filedialog.askdirectory()
+
     # Solicitar al usuario el nombre de la prueba
     prueba = input("Ingrese el nombre de la prueba (1a_Prueba, 2a_Prueba, etc.): ")
 
     # Construir la ruta del archivo config.txt
-    ruta_config = os.path.join("/home/rssidev/Desktop/Medidas", prueba, "config.txt")
+    # ruta_config = os.path.join("/home/rssidev/Desktop/Medidas", prueba, "config.txt")
+    ruta_config = ruta + '/' + prueba + '/' + 'config.txt'
 
     # Construir la ruta del archivo procesado.txt
-    ruta_datos = os.path.join("/home/rssidev/Desktop/Medidas", prueba, "procesado.txt")
+    # ruta_datos = os.path.join("/home/rssidev/Desktop/Medidas", prueba, "procesado.txt")
+    ruta_datos = ruta + '/' + prueba + '/' + 'procesado.txt'
     
     # Ruta donde se guardará el archivo PNG
     archivo = "Representacion.png"
-    ruta_guardado = os.path.join("/home/rssidev/Desktop/Medidas", prueba, archivo)
+    # ruta_guardado = os.path.join("/home/rssidev/Desktop/Medidas", prueba, archivo)
+    ruta_guardado = ruta + '/' + prueba + '/' + archivo
 
     representa_medidas(ruta_datos, ruta_config, ruta_guardado)
 

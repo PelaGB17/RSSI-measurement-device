@@ -169,7 +169,7 @@ class FullScreenApp:
                 medidas = [f" {level}", f" {datos_gps['latitude']}", f" {datos_gps['longitude']}", f" {presion}", f" {distancia}", f"{altura}", f"{datos_gps['altitude']}" ,f"{timestamp}", f"{real_level}"]
                 print(medidas)
                 
-                with open(self.ruta + "/" + n_val + ".txt", 'a') as txt_file:
+                with open(self.ruta + "/" + "medidas.txt", 'a') as txt_file:
                     txt_file.write(" ".join(medidas))
                     txt_file.write('\n')
                 
@@ -186,7 +186,7 @@ class FullScreenApp:
             except Exception as e:
                 print(e)
                 Utilidades.procesar_archivo(self.ruta, n_val)
-                datos = self.ruta + "/" +n_val + ".txt"
+                datos = self.ruta + "/medidas.txt"
                 procesado = self.ruta + "/procesado.txt"
                 config = self.ruta + "/config.txt"
                 Heatmap.main(datos, self.ruta)
