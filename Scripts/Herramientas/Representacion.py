@@ -120,7 +120,7 @@ def representa_medidas(data, config, ruta_guardado):
     plt.figure()
     plt.plot(R, P_r1, label="Free Space Propagation Model", linewidth=1.25, color=[0, 0.4470, 0.7410])
     plt.plot(R, Pr_2rays, label="Two-ray Model $//rho = -1$", linewidth=1.25, color=[0.9290, 0.6940, 0.1250])
-    plt.plot(dist_USRP, P_in_USRP, '.', label="Measurements", markersize=15, color=[0.6350, 0.0780, 0.1840])
+    plt.plot(dist_USRP, P_in_USRP + 21, '.', label="Measurements", markersize=15, color=[0.6350, 0.0780, 0.1840])
     plt.xlabel("Distance (m)")
     plt.ylabel("RSSI value (dBm)")
 
