@@ -39,7 +39,7 @@ def crear_subplots(datos, ruta_guardado):
     X, Y = np.meshgrid(x_grid, y_grid)
     
     # Interpolar los valores de nivel de señal y altura en la malla
-    Z_signal = griddata((datos['x'], datos['y']), datos[0] + 21 -26.05, (X, Y), method='linear')
+    Z_signal = griddata((datos['x'], datos['y']), datos[0] + -26.05, (X, Y), method='linear')
     Z_height = griddata((datos['x'], datos['y']), datos[5], (X, Y), method='linear')
     
     # Crear los subplots
