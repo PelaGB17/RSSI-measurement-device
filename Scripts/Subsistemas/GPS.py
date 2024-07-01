@@ -7,7 +7,7 @@ import adafruit_gps
 
 # for a computer, use the pyserial library for uart access
 import serial
-uart = serial.Serial("/dev/ttyACM0", baudrate=9600, timeout=10)
+uart = serial.Serial("/dev/ttyS0", baudrate=9600, timeout=10)
 
 # Create a GPS module instance.
 gps = adafruit_gps.GPS(uart, debug=False)  # Use UART/pyserial
@@ -59,16 +59,7 @@ while True:
         )
         print("Latitude: {0:.6f} degrees".format(gps.latitude))
         print("Longitude: {0:.6f} degrees".format(gps.longitude))
-        print(
-            "Precise Latitude: {:2.}{:2.4f} degrees".format(
-                gps.latitude_degrees, gps.latitude_minutes
-            )
-        )
-        print(
-            "Precise Longitude: {:2.}{:2.4f} degrees".format(
-                gps.longitude_degrees, gps.longitude_minutes
-            )
-        )
+
         print("Fix quality: {}".format(gps.fix_quality))
         # Some attributes beyond latitude, longitude and timestamp are optional
         # and might not be present.  Check if they're None before trying to use!

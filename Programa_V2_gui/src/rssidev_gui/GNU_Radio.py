@@ -29,7 +29,7 @@ class GNURadioBlock(gr.top_block):
         # Blocks
         ##################################################
         self.uhd_usrp_source_0_0 = uhd.usrp_source(
-            ",".join(("serial=31BA199", "")),
+            ",".join(("serial=31BBEFE", "")),
             uhd.stream_args(
                 cpu_format="fc32",
                 args='',

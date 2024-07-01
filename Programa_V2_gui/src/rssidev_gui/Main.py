@@ -23,7 +23,7 @@ def nivel_de_senal(f_val=2400000000, g_val=40):
 
         tb.stop()
 
-        level = level + obtener_calibracion(g_val, f_val)
+        level = float(level) + obtener_calibracion(g_val, f_val)
         
         return level 
 

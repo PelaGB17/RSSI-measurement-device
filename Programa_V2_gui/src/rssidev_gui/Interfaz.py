@@ -162,7 +162,7 @@ class FullScreenApp:
                 tb.wait()
                 
                 level = Utilidades.obtener_medidas(n_val)
-                real_level = level + self.cal_off
+                real_level = float(level) + self.cal_off
 
                 tb.stop()
                 
@@ -235,9 +235,9 @@ class FullScreenApp:
             self.set_altitude(alt)
         except Exception as e:
             print(e)
-            self.set_longitude("ERR")
-            self.set_latitude("ERR")
-            self.set_altitude("ERR")
+            self.set_longitude(000)
+            self.set_latitude(000)
+            self.set_altitude(000)
 
     def stop(self):
         self.status = False
