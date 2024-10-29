@@ -1,0 +1,11 @@
+Adafruit-Blinka
+adafruit-circuitpython-bmp280
+adafruit-circuitpython-ssd1306
+pillow
+pandas
+numpy
+geopy
+gpsd-py3
+seaborn
+scipy
+pyproj

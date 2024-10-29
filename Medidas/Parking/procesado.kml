@@ -1,0 +1,4136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+                    <kml xmlns="http://www.opengis.net/kml/2.2">
+                      <Document>
+                        <name>Medidas en Google Maps</name>
+                        <description>Coordenadas con medidas</description>
+                    
+                        <Placemark>
+                          <name>Medida_1</name>
+                          <Point>
+                            <coordinates>-5.6364629,43.5250459,15:44:02</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-7.06717</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_2</name>
+                          <Point>
+                            <coordinates>-5.6364589,43.5250479,15:44:05</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-6.994913</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_3</name>
+                          <Point>
+                            <coordinates>-5.636459,43.5250488,15:44:07</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-6.60365</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_4</name>
+                          <Point>
+                            <coordinates>-5.6364586,43.5250497,15:44:09</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-6.436226</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_5</name>
+                          <Point>
+                            <coordinates>-5.6364625,43.5250532,15:44:11</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-5.3911605</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_6</name>
+                          <Point>
+                            <coordinates>-5.636464,43.5250629,15:44:14</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-5.392394</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_7</name>
+                          <Point>
+                            <coordinates>-5.6364582,43.5250745,15:44:16</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-5.390848</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_8</name>
+                          <Point>
+                            <coordinates>-5.6364544,43.5250873,15:44:18</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-6.033181</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_9</name>
+                          <Point>
+                            <coordinates>-5.6364471,43.5250886,15:44:21</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-11.707518</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_10</name>
+                          <Point>
+                            <coordinates>-5.6364246,43.5250898,15:44:23</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-16.867132</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_11</name>
+                          <Point>
+                            <coordinates>-5.6364173,43.525088,15:44:25</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-23.7169</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_12</name>
+                          <Point>
+                            <coordinates>-5.6364065,43.5250866,15:44:27</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-21.78856</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_13</name>
+                          <Point>
+                            <coordinates>-5.6363901,43.5250845,15:44:30</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-20.287954</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_14</name>
+                          <Point>
+                            <coordinates>-5.6363767,43.5250794,15:44:32</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-20.362741</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_15</name>
+                          <Point>
+                            <coordinates>-5.6363608,43.5250781,15:44:34</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-20.311155</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_16</name>
+                          <Point>
+                            <coordinates>-5.6363509,43.5250722,15:44:37</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-22.350925</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_17</name>
+                          <Point>
+                            <coordinates>-5.6363445,43.5250714,15:44:39</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-22.189833</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_18</name>
+                          <Point>
+                            <coordinates>-5.636342,43.5250716,15:44:41</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-24.56512</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_19</name>
+                          <Point>
+                            <coordinates>-5.6363365,43.5250702,15:44:44</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-26.220339</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_20</name>
+                          <Point>
+                            <coordinates>-5.6363324,43.5250708,15:44:46</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-27.152365</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_21</name>
+                          <Point>
+                            <coordinates>-5.6363275,43.5250718,15:44:48</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-27.70667</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_22</name>
+                          <Point>
+                            <coordinates>-5.6363243,43.5250723,15:44:50</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-29.335611</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_23</name>
+                          <Point>
+                            <coordinates>-5.6363173,43.5250719,15:44:53</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-29.36516</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_24</name>
+                          <Point>
+                            <coordinates>-5.636315,43.5250739,15:44:55</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-29.788504</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_25</name>
+                          <Point>
+                            <coordinates>-5.6363117,43.5250745,15:44:57</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-30.284067</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_26</name>
+                          <Point>
+                            <coordinates>-5.6363101,43.525075,15:45:00</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-30.740091</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_27</name>
+                          <Point>
+                            <coordinates>-5.6363088,43.5250715,15:45:02</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-32.426292</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_28</name>
+                          <Point>
+                            <coordinates>-5.6363015,43.5250725,15:45:04</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-33.7263</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_29</name>
+                          <Point>
+                            <coordinates>-5.6362927,43.5250723,15:45:06</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-34.46043</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_30</name>
+                          <Point>
+                            <coordinates>-5.636281,43.5250714,15:45:08</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-32.09312</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_31</name>
+                          <Point>
+                            <coordinates>-5.6362721,43.5250718,15:45:11</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-33.70933</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_32</name>
+                          <Point>
+                            <coordinates>-5.6362609,43.5250738,15:45:13</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-34.89834</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_33</name>
+                          <Point>
+                            <coordinates>-5.6362542,43.525075,15:45:15</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-35.20514</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_34</name>
+                          <Point>
+                            <coordinates>-5.6362535,43.5250741,15:45:17</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-35.821846</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_35</name>
+                          <Point>
+                            <coordinates>-5.6362492,43.5250728,15:45:19</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-37.67445</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_36</name>
+                          <Point>
+                            <coordinates>-5.6362409,43.5250738,15:45:21</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-37.615646</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_37</name>
+                          <Point>
+                            <coordinates>-5.6362325,43.5250748,15:45:23</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-37.763233</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_38</name>
+                          <Point>
+                            <coordinates>-5.6362222,43.5250782,15:45:26</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-37.22333</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_39</name>
+                          <Point>
+                            <coordinates>-5.6362063,43.5250792,15:45:28</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-38.5988</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_40</name>
+                          <Point>
+                            <coordinates>-5.6361976,43.5250789,15:45:30</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-39.65053</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_41</name>
+                          <Point>
+                            <coordinates>-5.6361896,43.5250784,15:45:32</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-40.585014</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_42</name>
+                          <Point>
+                            <coordinates>-5.6361864,43.5250773,15:45:34</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-40.649834</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_43</name>
+                          <Point>
+                            <coordinates>-5.6361825,43.5250746,15:45:36</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-40.40793</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_44</name>
+                          <Point>
+                            <coordinates>-5.6361798,43.5250744,15:45:38</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-41.377857</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_45</name>
+                          <Point>
+                            <coordinates>-5.6361763,43.5250731,15:45:41</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-41.379368</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_46</name>
+                          <Point>
+                            <coordinates>-5.6361702,43.5250748,15:45:43</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-40.379555</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_47</name>
+                          <Point>
+                            <coordinates>-5.6361646,43.5250762,15:45:45</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-41.5382</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_48</name>
+                          <Point>
+                            <coordinates>-5.6361585,43.5250771,15:45:47</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-42.864258</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_49</name>
+                          <Point>
+                            <coordinates>-5.6361553,43.5250772,15:45:49</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-42.815186</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_50</name>
+                          <Point>
+                            <coordinates>-5.6361466,43.5250749,15:45:51</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-42.415085</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_51</name>
+                          <Point>
+                            <coordinates>-5.6361366,43.5250729,15:45:53</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-44.80304</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_52</name>
+                          <Point>
+                            <coordinates>-5.6361296,43.5250718,15:45:56</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-44.650974</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_53</name>
+                          <Point>
+                            <coordinates>-5.6361189,43.5250738,15:45:58</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-46.10095</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_54</name>
+                          <Point>
+                            <coordinates>-5.6361128,43.5250782,15:46:00</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-46.92757</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_55</name>
+                          <Point>
+                            <coordinates>-5.6361053,43.525078,15:46:02</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-45.747547</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_56</name>
+                          <Point>
+                            <coordinates>-5.6361019,43.5250804,15:46:04</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-45.412876</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_57</name>
+                          <Point>
+                            <coordinates>-5.636099,43.525083,15:46:06</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-44.253975</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_58</name>
+                          <Point>
+                            <coordinates>-5.6360966,43.5250843,15:46:08</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-47.220642</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_59</name>
+                          <Point>
+                            <coordinates>-5.6360913,43.5250838,15:46:10</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-47.89502</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_60</name>
+                          <Point>
+                            <coordinates>-5.6360856,43.5250816,15:46:13</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-45.2692</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_61</name>
+                          <Point>
+                            <coordinates>-5.6360777,43.5250802,15:46:15</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-47.47198</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_62</name>
+                          <Point>
+                            <coordinates>-5.6360707,43.5250818,15:46:17</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-46.830666</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_63</name>
+                          <Point>
+                            <coordinates>-5.6360608,43.5250843,15:46:19</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-47.802048</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_64</name>
+                          <Point>
+                            <coordinates>-5.6360486,43.5250887,15:46:21</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-48.445686</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_65</name>
+                          <Point>
+                            <coordinates>-5.6360384,43.5250852,15:46:23</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-47.701267</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_66</name>
+                          <Point>
+                            <coordinates>-5.6360312,43.5250818,15:46:25</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-50.60678</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_67</name>
+                          <Point>
+                            <coordinates>-5.6360234,43.5250784,15:46:28</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-51.61959</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_68</name>
+                          <Point>
+                            <coordinates>-5.6360163,43.5250795,15:46:30</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-53.071068</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_69</name>
+                          <Point>
+                            <coordinates>-5.6360118,43.525081,15:46:32</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-48.755142</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_70</name>
+                          <Point>
+                            <coordinates>-5.6360087,43.5250814,15:46:34</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-49.445927</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_71</name>
+                          <Point>
+                            <coordinates>-5.6360036,43.5250816,15:46:36</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-49.61932</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_72</name>
+                          <Point>
+                            <coordinates>-5.6359973,43.5250799,15:46:39</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-49.224285</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_73</name>
+                          <Point>
+                            <coordinates>-5.6359856,43.5250749,15:46:41</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-52.00843</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_74</name>
+                          <Point>
+                            <coordinates>-5.6359773,43.525077,15:46:43</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-48.91513</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_75</name>
+                          <Point>
+                            <coordinates>-5.6359719,43.525078,15:46:45</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-48.84725</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_76</name>
+                          <Point>
+                            <coordinates>-5.6359676,43.5250797,15:46:48</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-51.07327</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_77</name>
+                          <Point>
+                            <coordinates>-5.6359681,43.525082,15:46:50</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-49.69895</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_78</name>
+                          <Point>
+                            <coordinates>-5.6359649,43.5250837,15:46:52</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-52.340668</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_79</name>
+                          <Point>
+                            <coordinates>-5.6359585,43.5250833,15:46:55</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-53.78602</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_80</name>
+                          <Point>
+                            <coordinates>-5.635955,43.5250823,15:46:57</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-48.715202</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_81</name>
+                          <Point>
+                            <coordinates>-5.6359521,43.5250809,15:46:59</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-53.19033</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_82</name>
+                          <Point>
+                            <coordinates>-5.6359462,43.525081,15:47:01</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-52.124756</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_83</name>
+                          <Point>
+                            <coordinates>-5.6359359,43.5250827,15:47:04</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-52.945198</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_84</name>
+                          <Point>
+                            <coordinates>-5.6359311,43.5250838,15:47:06</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-53.82353</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_85</name>
+                          <Point>
+                            <coordinates>-5.6359284,43.5250842,15:47:08</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-58.70929</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_86</name>
+                          <Point>
+                            <coordinates>-5.635924,43.5250839,15:47:11</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-53.774868</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_87</name>
+                          <Point>
+                            <coordinates>-5.6359142,43.5250772,15:47:13</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-52.635918</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_88</name>
+                          <Point>
+                            <coordinates>-5.6359059,43.5250776,15:47:15</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-52.93575</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_89</name>
+                          <Point>
+                            <coordinates>-5.6358995,43.5250796,15:47:17</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-53.611027</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_90</name>
+                          <Point>
+                            <coordinates>-5.635895,43.5250809,15:47:20</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-53.650383</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_91</name>
+                          <Point>
+                            <coordinates>-5.6358926,43.5250811,15:47:22</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-52.692333</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_92</name>
+                          <Point>
+                            <coordinates>-5.6358853,43.5250826,15:47:24</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-54.624172</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_93</name>
+                          <Point>
+                            <coordinates>-5.6358764,43.5250843,15:47:27</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-57.833168</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_94</name>
+                          <Point>
+                            <coordinates>-5.6358629,43.5250847,15:47:29</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-54.051773</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_95</name>
+                          <Point>
+                            <coordinates>-5.635858,43.5250825,15:47:31</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-54.422035</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_96</name>
+                          <Point>
+                            <coordinates>-5.6358509,43.5250829,15:47:33</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-55.308296</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_97</name>
+                          <Point>
+                            <coordinates>-5.6358457,43.5250822,15:47:36</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-56.729305</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_98</name>
+                          <Point>
+                            <coordinates>-5.6358422,43.5250806,15:47:38</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-54.401997</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_99</name>
+                          <Point>
+                            <coordinates>-5.635836,43.5250811,15:47:40</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-56.469448</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_100</name>
+                          <Point>
+                            <coordinates>-5.6358262,43.5250826,15:47:43</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-58.931046</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_101</name>
+                          <Point>
+                            <coordinates>-5.6358092,43.5250867,15:47:45</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-56.643192</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_102</name>
+                          <Point>
+                            <coordinates>-5.6358013,43.5250897,15:47:47</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-55.000362</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_103</name>
+                          <Point>
+                            <coordinates>-5.6357862,43.5250961,15:47:51</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-62.03005</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_104</name>
+                          <Point>
+                            <coordinates>-5.6357796,43.5250982,15:47:53</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-54.85193</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_105</name>
+                          <Point>
+                            <coordinates>-5.635771,43.5251008,15:47:55</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-58.507347</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_106</name>
+                          <Point>
+                            <coordinates>-5.6357648,43.5251012,15:47:57</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-55.995712</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_107</name>
+                          <Point>
+                            <coordinates>-5.6357608,43.5251022,15:47:59</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-53.560986</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_108</name>
+                          <Point>
+                            <coordinates>-5.6357544,43.5251045,15:48:02</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-55.60906</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_109</name>
+                          <Point>
+                            <coordinates>-5.6357521,43.525105,15:48:04</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-56.386868</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_110</name>
+                          <Point>
+                            <coordinates>-5.6357521,43.5251054,15:48:06</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-56.8286</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_111</name>
+                          <Point>
+                            <coordinates>-5.6357483,43.5251066,15:48:08</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-58.28952</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_112</name>
+                          <Point>
+                            <coordinates>-5.6357468,43.5251097,15:48:10</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-61.35938</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_113</name>
+                          <Point>
+                            <coordinates>-5.6357441,43.5251084,15:48:12</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-61.711998</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_114</name>
+                          <Point>
+                            <coordinates>-5.6357431,43.5251088,15:48:14</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-58.535797</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_115</name>
+                          <Point>
+                            <coordinates>-5.6357459,43.52511,15:48:16</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-58.702225</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_116</name>
+                          <Point>
+                            <coordinates>-5.6357488,43.5251109,15:48:19</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-62.132854</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_117</name>
+                          <Point>
+                            <coordinates>-5.6357541,43.5251108,15:48:21</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-56.868427</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_118</name>
+                          <Point>
+                            <coordinates>-5.6357561,43.5251108,15:48:23</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-57.628513</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_119</name>
+                          <Point>
+                            <coordinates>-5.6357582,43.525109,15:48:25</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-56.184814</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_120</name>
+                          <Point>
+                            <coordinates>-5.6357576,43.5251078,15:48:27</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-62.249577</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_121</name>
+                          <Point>
+                            <coordinates>-5.6357557,43.5251052,15:48:29</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-59.321423</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_122</name>
+                          <Point>
+                            <coordinates>-5.6357491,43.5251051,15:48:31</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-57.178406</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_123</name>
+                          <Point>
+                            <coordinates>-5.6357443,43.5251037,15:48:34</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-57.6283</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_124</name>
+                          <Point>
+                            <coordinates>-5.6357372,43.5251047,15:48:36</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-56.43872</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_125</name>
+                          <Point>
+                            <coordinates>-5.6357275,43.5251076,15:48:38</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-58.5617</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_126</name>
+                          <Point>
+                            <coordinates>-5.6357195,43.5251081,15:48:40</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-60.183514</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_127</name>
+                          <Point>
+                            <coordinates>-5.6357098,43.5251103,15:48:42</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-57.271793</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_128</name>
+                          <Point>
+                            <coordinates>-5.6357021,43.5251115,15:48:44</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-58.953724</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_129</name>
+                          <Point>
+                            <coordinates>-5.635694,43.5251121,15:48:46</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-58.23026</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_130</name>
+                          <Point>
+                            <coordinates>-5.6356862,43.5251114,15:48:49</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-61.502323</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_131</name>
+                          <Point>
+                            <coordinates>-5.635677,43.5251093,15:48:51</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-59.47882</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_132</name>
+                          <Point>
+                            <coordinates>-5.6356665,43.5251024,15:48:53</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-58.25963</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_133</name>
+                          <Point>
+                            <coordinates>-5.635661,43.5250973,15:48:55</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-61.92883</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_134</name>
+                          <Point>
+                            <coordinates>-5.6356496,43.5250959,15:48:57</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-64.66</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_135</name>
+                          <Point>
+                            <coordinates>-5.6356406,43.5250915,15:48:59</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-58.577248</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_136</name>
+                          <Point>
+                            <coordinates>-5.6356381,43.5250898,15:49:01</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-64.99042</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_137</name>
+                          <Point>
+                            <coordinates>-5.635634,43.5250908,15:49:03</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-57.510433</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_138</name>
+                          <Point>
+                            <coordinates>-5.6356322,43.5250905,15:49:06</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-56.62014</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_139</name>
+                          <Point>
+                            <coordinates>-5.6356228,43.5250925,15:49:08</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-59.888145</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_140</name>
+                          <Point>
+                            <coordinates>-5.6356107,43.5250956,15:49:10</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-56.839394</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_141</name>
+                          <Point>
+                            <coordinates>-5.6356026,43.5250951,15:49:12</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-62.936684</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_142</name>
+                          <Point>
+                            <coordinates>-5.6355962,43.5250959,15:49:14</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-56.66361</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_143</name>
+                          <Point>
+                            <coordinates>-5.635589,43.525094,15:49:16</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-61.47557</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_144</name>
+                          <Point>
+                            <coordinates>-5.6355859,43.5250934,15:49:18</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-60.233818</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_145</name>
+                          <Point>
+                            <coordinates>-5.6355851,43.5250928,15:49:21</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-56.828953</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_146</name>
+                          <Point>
+                            <coordinates>-5.6355888,43.5250976,15:49:23</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-60.9258</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_147</name>
+                          <Point>
+                            <coordinates>-5.635592,43.5251048,15:49:27</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-58.009434</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_148</name>
+                          <Point>
+                            <coordinates>-5.6355928,43.5251067,15:49:29</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-60.6852</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_149</name>
+                          <Point>
+                            <coordinates>-5.6355923,43.5251095,15:49:31</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-63.701214</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_150</name>
+                          <Point>
+                            <coordinates>-5.6355865,43.5251117,15:49:33</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-66.524734</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_151</name>
+                          <Point>
+                            <coordinates>-5.6355836,43.5251116,15:49:36</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-60.744907</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_152</name>
+                          <Point>
+                            <coordinates>-5.6355864,43.5251115,15:49:38</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-60.287605</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_153</name>
+                          <Point>
+                            <coordinates>-5.6355856,43.5251119,15:49:40</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-62.640667</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_154</name>
+                          <Point>
+                            <coordinates>-5.6355821,43.5251167,15:49:42</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-61.44524</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_155</name>
+                          <Point>
+                            <coordinates>-5.6355737,43.5251237,15:49:44</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-65.60847</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_156</name>
+                          <Point>
+                            <coordinates>-5.6355646,43.5251294,15:49:46</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-61.54963</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_157</name>
+                          <Point>
+                            <coordinates>-5.6355576,43.5251319,15:49:48</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-63.629803</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_158</name>
+                          <Point>
+                            <coordinates>-5.6355515,43.525132,15:49:51</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-59.46973</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_159</name>
+                          <Point>
+                            <coordinates>-5.6355489,43.5251303,15:49:53</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-61.36205</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_160</name>
+                          <Point>
+                            <coordinates>-5.6355522,43.5251307,15:49:55</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-62.586716</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_161</name>
+                          <Point>
+                            <coordinates>-5.6355524,43.5251311,15:49:57</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-69.561516</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_162</name>
+                          <Point>
+                            <coordinates>-5.6355572,43.5251318,15:49:59</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-64.72465</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_163</name>
+                          <Point>
+                            <coordinates>-5.6355608,43.5251346,15:50:01</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-59.95202</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_164</name>
+                          <Point>
+                            <coordinates>-5.6355599,43.525139,15:50:03</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-65.73507</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_165</name>
+                          <Point>
+                            <coordinates>-5.635561,43.5251438,15:50:05</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-66.06233</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_166</name>
+                          <Point>
+                            <coordinates>-5.6355611,43.5251462,15:50:08</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-64.428665</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_167</name>
+                          <Point>
+                            <coordinates>-5.635561,43.5251503,15:50:10</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-65.22347</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_168</name>
+                          <Point>
+                            <coordinates>-5.6355642,43.5251511,15:50:12</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-62.83575</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_169</name>
+                          <Point>
+                            <coordinates>-5.6355696,43.5251518,15:50:14</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-59.995403</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_170</name>
+                          <Point>
+                            <coordinates>-5.6355783,43.5251503,15:50:16</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-60.30271</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_171</name>
+                          <Point>
+                            <coordinates>-5.6355803,43.5251508,15:50:18</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-58.140087</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_172</name>
+                          <Point>
+                            <coordinates>-5.6355872,43.5251536,15:50:20</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-66.47572</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_173</name>
+                          <Point>
+                            <coordinates>-5.6355959,43.5251581,15:50:22</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-61.373257</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_174</name>
+                          <Point>
+                            <coordinates>-5.6356025,43.5251603,15:50:25</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-66.499725</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_175</name>
+                          <Point>
+                            <coordinates>-5.6356127,43.5251627,15:50:27</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-60.757885</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_176</name>
+                          <Point>
+                            <coordinates>-5.6356218,43.5251691,15:50:29</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-63.165726</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_177</name>
+                          <Point>
+                            <coordinates>-5.63563,43.5251747,15:50:31</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-67.953445</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_178</name>
+                          <Point>
+                            <coordinates>-5.6356386,43.5251803,15:50:33</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-61.50297</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_179</name>
+                          <Point>
+                            <coordinates>-5.6356448,43.5251859,15:50:35</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-61.190342</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_180</name>
+                          <Point>
+                            <coordinates>-5.6356534,43.5251894,15:50:37</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-61.938675</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_181</name>
+                          <Point>
+                            <coordinates>-5.6356593,43.5251919,15:50:40</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-66.47375</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_182</name>
+                          <Point>
+                            <coordinates>-5.6356667,43.5251946,15:50:42</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-62.698753</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_183</name>
+                          <Point>
+                            <coordinates>-5.6356691,43.5251976,15:50:44</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-63.900703</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_184</name>
+                          <Point>
+                            <coordinates>-5.6356685,43.5252006,15:50:46</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-70.57583</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_185</name>
+                          <Point>
+                            <coordinates>-5.6356696,43.5252018,15:50:48</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-66.84113</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_186</name>
+                          <Point>
+                            <coordinates>-5.6356678,43.5252009,15:50:50</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-64.00326</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_187</name>
+                          <Point>
+                            <coordinates>-5.6356704,43.5251985,15:50:53</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-61.980698</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_188</name>
+                          <Point>
+                            <coordinates>-5.6356791,43.5252019,15:50:55</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-68.32081</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_189</name>
+                          <Point>
+                            <coordinates>-5.635681,43.5252033,15:50:57</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-66.48774</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_190</name>
+                          <Point>
+                            <coordinates>-5.6356822,43.5252038,15:50:59</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-64.08791</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_191</name>
+                          <Point>
+                            <coordinates>-5.6356806,43.5252048,15:51:01</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-60.861862</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_192</name>
+                          <Point>
+                            <coordinates>-5.6356787,43.5252001,15:51:03</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-64.285576</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_193</name>
+                          <Point>
+                            <coordinates>-5.6356785,43.5251982,15:51:05</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-57.790497</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_194</name>
+                          <Point>
+                            <coordinates>-5.6356813,43.5251972,15:51:08</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-65.96886</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_195</name>
+                          <Point>
+                            <coordinates>-5.6356889,43.5251967,15:51:10</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-57.287106</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_196</name>
+                          <Point>
+                            <coordinates>-5.6356916,43.5251955,15:51:12</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-64.245445</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_197</name>
+                          <Point>
+                            <coordinates>-5.6356987,43.5251931,15:51:14</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-62.880184</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_198</name>
+                          <Point>
+                            <coordinates>-5.6357097,43.5251878,15:51:16</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-61.99127</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_199</name>
+                          <Point>
+                            <coordinates>-5.6357167,43.5251822,15:51:18</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-61.18325</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_200</name>
+                          <Point>
+                            <coordinates>-5.6357244,43.5251782,15:51:21</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-67.41576</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_201</name>
+                          <Point>
+                            <coordinates>-5.6357331,43.5251774,15:51:23</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-66.25922</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_202</name>
+                          <Point>
+                            <coordinates>-5.6357395,43.5251785,15:51:25</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-62.405346</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_203</name>
+                          <Point>
+                            <coordinates>-5.635743,43.5251793,15:51:27</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-60.901024</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_204</name>
+                          <Point>
+                            <coordinates>-5.6357461,43.5251792,15:51:29</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-66.26583</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_205</name>
+                          <Point>
+                            <coordinates>-5.6357506,43.5251781,15:51:31</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-57.737576</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_206</name>
+                          <Point>
+                            <coordinates>-5.635754,43.5251798,15:51:34</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-65.44316</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_207</name>
+                          <Point>
+                            <coordinates>-5.6357573,43.5251792,15:51:36</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-62.885464</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_208</name>
+                          <Point>
+                            <coordinates>-5.6357636,43.5251778,15:51:39</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-59.774807</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_209</name>
+                          <Point>
+                            <coordinates>-5.6357692,43.525177,15:51:41</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-61.336185</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_210</name>
+                          <Point>
+                            <coordinates>-5.6357763,43.5251767,15:51:43</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-58.51953</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_211</name>
+                          <Point>
+                            <coordinates>-5.6357843,43.5251753,15:51:46</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-56.851437</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_212</name>
+                          <Point>
+                            <coordinates>-5.6357901,43.5251728,15:51:49</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-57.132374</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_213</name>
+                          <Point>
+                            <coordinates>-5.6357919,43.5251719,15:51:51</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-54.834766</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_214</name>
+                          <Point>
+                            <coordinates>-5.6357966,43.5251689,15:51:53</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-60.867455</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_215</name>
+                          <Point>
+                            <coordinates>-5.6358019,43.5251637,15:51:55</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-61.023098</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_216</name>
+                          <Point>
+                            <coordinates>-5.6358052,43.5251618,15:51:57</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-56.853615</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_217</name>
+                          <Point>
+                            <coordinates>-5.6358107,43.5251593,15:51:59</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-58.124157</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_218</name>
+                          <Point>
+                            <coordinates>-5.6358147,43.5251543,15:52:02</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-62.57869</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_219</name>
+                          <Point>
+                            <coordinates>-5.6358175,43.5251523,15:52:04</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-59.351467</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_220</name>
+                          <Point>
+                            <coordinates>-5.6358194,43.5251504,15:52:06</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-61.113667</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_221</name>
+                          <Point>
+                            <coordinates>-5.6358231,43.5251487,15:52:08</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-62.789104</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_222</name>
+                          <Point>
+                            <coordinates>-5.6358278,43.5251466,15:52:10</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-60.710114</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_223</name>
+                          <Point>
+                            <coordinates>-5.6358343,43.5251435,15:52:12</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-56.797543</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_224</name>
+                          <Point>
+                            <coordinates>-5.6358402,43.5251394,15:52:15</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-58.18091</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_225</name>
+                          <Point>
+                            <coordinates>-5.6358453,43.5251405,15:52:17</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-57.16509</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_226</name>
+                          <Point>
+                            <coordinates>-5.6358546,43.5251421,15:52:19</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-56.72811</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_227</name>
+                          <Point>
+                            <coordinates>-5.6358577,43.5251412,15:52:21</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-52.731224</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_228</name>
+                          <Point>
+                            <coordinates>-5.635868,43.5251384,15:52:24</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-54.178547</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_229</name>
+                          <Point>
+                            <coordinates>-5.6358737,43.5251379,15:52:26</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-61.95867</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_230</name>
+                          <Point>
+                            <coordinates>-5.6358818,43.5251396,15:52:28</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-52.600094</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_231</name>
+                          <Point>
+                            <coordinates>-5.6358901,43.525142,15:52:30</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-54.43431</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_232</name>
+                          <Point>
+                            <coordinates>-5.6358924,43.5251419,15:52:33</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-58.70219</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_233</name>
+                          <Point>
+                            <coordinates>-5.6358968,43.5251373,15:52:35</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-56.980007</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_234</name>
+                          <Point>
+                            <coordinates>-5.6358985,43.5251361,15:52:37</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-53.888336</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_235</name>
+                          <Point>
+                            <coordinates>-5.6359016,43.5251355,15:52:39</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-62.75562</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_236</name>
+                          <Point>
+                            <coordinates>-5.6359067,43.5251352,15:52:41</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-56.692783</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_237</name>
+                          <Point>
+                            <coordinates>-5.635915,43.5251366,15:52:43</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-56.834034</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_238</name>
+                          <Point>
+                            <coordinates>-5.6359228,43.5251397,15:52:46</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-53.39303</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_239</name>
+                          <Point>
+                            <coordinates>-5.6359291,43.5251404,15:52:48</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-54.491154</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_240</name>
+                          <Point>
+                            <coordinates>-5.6359338,43.5251422,15:52:50</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-52.568245</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_241</name>
+                          <Point>
+                            <coordinates>-5.6359369,43.5251402,15:52:52</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-50.11419</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_242</name>
+                          <Point>
+                            <coordinates>-5.6359407,43.5251371,15:52:54</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-52.010487</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_243</name>
+                          <Point>
+                            <coordinates>-5.6359428,43.5251398,15:52:56</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-51.073406</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_244</name>
+                          <Point>
+                            <coordinates>-5.635943,43.525142,15:52:58</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-50.82248</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_245</name>
+                          <Point>
+                            <coordinates>-5.6359436,43.5251396,15:53:01</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-56.631084</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_246</name>
+                          <Point>
+                            <coordinates>-5.6359443,43.5251391,15:53:03</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-51.043804</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_247</name>
+                          <Point>
+                            <coordinates>-5.6359478,43.5251385,15:53:05</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-51.89887</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_248</name>
+                          <Point>
+                            <coordinates>-5.6359541,43.5251407,15:53:07</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-51.972958</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_249</name>
+                          <Point>
+                            <coordinates>-5.6359593,43.525142,15:53:09</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-50.300457</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_250</name>
+                          <Point>
+                            <coordinates>-5.6359667,43.5251389,15:53:11</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-54.147762</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_251</name>
+                          <Point>
+                            <coordinates>-5.6359704,43.5251382,15:53:14</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-50.83074</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_252</name>
+                          <Point>
+                            <coordinates>-5.6359835,43.5251346,15:53:16</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-50.372185</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_253</name>
+                          <Point>
+                            <coordinates>-5.6359895,43.525134,15:53:18</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-50.07361</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_254</name>
+                          <Point>
+                            <coordinates>-5.6359957,43.5251363,15:53:20</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-50.08107</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_255</name>
+                          <Point>
+                            <coordinates>-5.6360018,43.5251353,15:53:22</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-49.39459</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_256</name>
+                          <Point>
+                            <coordinates>-5.6360085,43.5251323,15:53:24</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-50.348236</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_257</name>
+                          <Point>
+                            <coordinates>-5.6360111,43.5251319,15:53:26</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-47.428417</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_258</name>
+                          <Point>
+                            <coordinates>-5.6360162,43.5251284,15:53:29</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-49.135674</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_259</name>
+                          <Point>
+                            <coordinates>-5.636028,43.5251222,15:53:31</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-46.711086</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_260</name>
+                          <Point>
+                            <coordinates>-5.6360332,43.5251174,15:53:33</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-46.865467</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_261</name>
+                          <Point>
+                            <coordinates>-5.6360369,43.5251123,15:53:35</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-46.64353</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_262</name>
+                          <Point>
+                            <coordinates>-5.6360415,43.5251084,15:53:37</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-48.62012</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_263</name>
+                          <Point>
+                            <coordinates>-5.6360457,43.5251068,15:53:39</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-47.95723</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_264</name>
+                          <Point>
+                            <coordinates>-5.6360485,43.5251069,15:53:42</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-46.771816</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_265</name>
+                          <Point>
+                            <coordinates>-5.63605,43.5251062,15:53:44</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-46.557415</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_266</name>
+                          <Point>
+                            <coordinates>-5.6360519,43.5251051,15:53:46</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-46.381325</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_267</name>
+                          <Point>
+                            <coordinates>-5.6360539,43.5251072,15:53:48</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-46.29307</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_268</name>
+                          <Point>
+                            <coordinates>-5.6360566,43.5251091,15:53:50</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-45.9532</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_269</name>
+                          <Point>
+                            <coordinates>-5.6360596,43.5251117,15:53:52</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-46.621994</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_270</name>
+                          <Point>
+                            <coordinates>-5.636067,43.5251111,15:53:54</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-45.438587</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_271</name>
+                          <Point>
+                            <coordinates>-5.6360684,43.5251115,15:53:57</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-45.308475</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_272</name>
+                          <Point>
+                            <coordinates>-5.6360754,43.5251137,15:53:59</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-44.106052</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_273</name>
+                          <Point>
+                            <coordinates>-5.6360807,43.5251111,15:54:01</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-45.13856</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_274</name>
+                          <Point>
+                            <coordinates>-5.6360898,43.525109,15:54:03</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-44.2907</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_275</name>
+                          <Point>
+                            <coordinates>-5.6360972,43.5251065,15:54:05</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-42.718857</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_276</name>
+                          <Point>
+                            <coordinates>-5.6361011,43.5251058,15:54:07</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-43.924515</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_277</name>
+                          <Point>
+                            <coordinates>-5.6361087,43.5251053,15:54:10</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-42.89663</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_278</name>
+                          <Point>
+                            <coordinates>-5.6361139,43.525102,15:54:12</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-44.10479</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_279</name>
+                          <Point>
+                            <coordinates>-5.6361229,43.5251003,15:54:14</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-41.74795</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_280</name>
+                          <Point>
+                            <coordinates>-5.6361323,43.5250994,15:54:16</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-42.260983</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_281</name>
+                          <Point>
+                            <coordinates>-5.6361436,43.5250977,15:54:18</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-40.799515</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_282</name>
+                          <Point>
+                            <coordinates>-5.6361554,43.5250957,15:54:20</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-40.642517</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_283</name>
+                          <Point>
+                            <coordinates>-5.6361628,43.525095,15:54:23</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-40.99966</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_284</name>
+                          <Point>
+                            <coordinates>-5.6361689,43.5250944,15:54:25</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-40.00274</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_285</name>
+                          <Point>
+                            <coordinates>-5.6361793,43.5250949,15:54:27</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-39.74937</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_286</name>
+                          <Point>
+                            <coordinates>-5.6361814,43.5250952,15:54:29</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-39.08709</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_287</name>
+                          <Point>
+                            <coordinates>-5.636183,43.525097,15:54:31</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-39.109318</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_288</name>
+                          <Point>
+                            <coordinates>-5.6361844,43.5250982,15:54:33</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-39.553463</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_289</name>
+                          <Point>
+                            <coordinates>-5.6361924,43.5250954,15:54:35</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-38.760227</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_290</name>
+                          <Point>
+                            <coordinates>-5.6362008,43.5250927,15:54:38</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-37.095165</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_291</name>
+                          <Point>
+                            <coordinates>-5.6362097,43.525087,15:54:40</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-37.447136</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_292</name>
+                          <Point>
+                            <coordinates>-5.6362211,43.5250808,15:54:42</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-36.651073</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_293</name>
+                          <Point>
+                            <coordinates>-5.636232,43.525079,15:54:44</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-36.22506</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_294</name>
+                          <Point>
+                            <coordinates>-5.6362408,43.5250758,15:54:46</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-35.97367</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_295</name>
+                          <Point>
+                            <coordinates>-5.6362484,43.5250737,15:54:48</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-35.569664</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_296</name>
+                          <Point>
+                            <coordinates>-5.6362554,43.5250722,15:54:50</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-35.21347</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_297</name>
+                          <Point>
+                            <coordinates>-5.6362617,43.5250709,15:54:53</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-34.154575</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_298</name>
+                          <Point>
+                            <coordinates>-5.6362666,43.5250721,15:54:55</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-32.936123</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_299</name>
+                          <Point>
+                            <coordinates>-5.6362673,43.5250734,15:54:57</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-32.786636</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_300</name>
+                          <Point>
+                            <coordinates>-5.6362712,43.5250737,15:54:59</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-32.08092</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_301</name>
+                          <Point>
+                            <coordinates>-5.6362782,43.5250722,15:55:01</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-30.635128</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_302</name>
+                          <Point>
+                            <coordinates>-5.6362842,43.525069,15:55:03</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-29.546013</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_303</name>
+                          <Point>
+                            <coordinates>-5.6362878,43.5250664,15:55:06</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-29.349434</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_304</name>
+                          <Point>
+                            <coordinates>-5.6362902,43.5250651,15:55:08</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-28.323301</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_305</name>
+                          <Point>
+                            <coordinates>-5.6362983,43.5250622,15:55:10</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-27.358318</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_306</name>
+                          <Point>
+                            <coordinates>-5.6363055,43.5250627,15:55:12</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-26.46139</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_307</name>
+                          <Point>
+                            <coordinates>-5.6363103,43.5250606,15:55:14</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-25.332512</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_308</name>
+                          <Point>
+                            <coordinates>-5.6363132,43.5250602,15:55:16</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-24.43483</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_309</name>
+                          <Point>
+                            <coordinates>-5.6363173,43.5250592,15:55:18</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-23.267294</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_310</name>
+                          <Point>
+                            <coordinates>-5.6363191,43.5250587,15:55:21</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-22.137533</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_311</name>
+                          <Point>
+                            <coordinates>-5.6363265,43.5250565,15:55:23</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-20.834011</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_312</name>
+                          <Point>
+                            <coordinates>-5.63633,43.5250548,15:55:25</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-19.954039</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_313</name>
+                          <Point>
+                            <coordinates>-5.6363328,43.5250537,15:55:27</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-19.477854</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_314</name>
+                          <Point>
+                            <coordinates>-5.6363339,43.5250527,15:55:29</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-18.88343</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_315</name>
+                          <Point>
+                            <coordinates>-5.6363349,43.5250517,15:55:31</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-18.92182</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_316</name>
+                          <Point>
+                            <coordinates>-5.6363389,43.5250498,15:55:34</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-19.48821</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_317</name>
+                          <Point>
+                            <coordinates>-5.6363445,43.5250475,15:55:36</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-16.032969</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_318</name>
+                          <Point>
+                            <coordinates>-5.6363557,43.5250456,15:55:38</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-11.970853</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_319</name>
+                          <Point>
+                            <coordinates>-5.6363615,43.5250449,15:55:40</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-10.623038</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_320</name>
+                          <Point>
+                            <coordinates>-5.6363711,43.5250448,15:55:42</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-10.6384115</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_321</name>
+                          <Point>
+                            <coordinates>-5.6363735,43.5250439,15:55:44</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-10.856282</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_322</name>
+                          <Point>
+                            <coordinates>-5.6363705,43.5250421,15:55:46</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-10.436063</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_323</name>
+                          <Point>
+                            <coordinates>-5.6363685,43.5250428,15:55:49</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-10.416689</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_324</name>
+                          <Point>
+                            <coordinates>-5.6363705,43.5250467,15:55:51</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-11.081428</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_325</name>
+                          <Point>
+                            <coordinates>-5.6363686,43.5250469,15:55:53</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-6.8354363</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_326</name>
+                          <Point>
+                            <coordinates>-5.6363678,43.5250475,15:55:55</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-5.4027987</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_327</name>
+                          <Point>
+                            <coordinates>-5.6363603,43.5250477,15:55:57</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-5.396551</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_328</name>
+                          <Point>
+                            <coordinates>-5.6363589,43.5250515,15:55:59</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-5.3968396</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_329</name>
+                          <Point>
+                            <coordinates>-5.6363598,43.5250508,15:56:02</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-5.4115353</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_330</name>
+                          <Point>
+                            <coordinates>-5.6363635,43.5250483,15:56:04</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-5.42368</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_331</name>
+                          <Point>
+                            <coordinates>-5.6363659,43.5250463,15:56:06</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-5.3869724</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_332</name>
+                          <Point>
+                            <coordinates>-5.636376,43.5250466,15:56:08</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-5.394866</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_333</name>
+                          <Point>
+                            <coordinates>-5.6363829,43.5250448,15:56:10</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-5.391537</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_334</name>
+                          <Point>
+                            <coordinates>-5.6363821,43.5250486,15:56:12</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-5.3909535</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_335</name>
+                          <Point>
+                            <coordinates>-5.6363844,43.5250542,15:56:14</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-5.394487</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_336</name>
+                          <Point>
+                            <coordinates>-5.6363861,43.5250559,15:56:17</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-5.395082</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_337</name>
+                          <Point>
+                            <coordinates>-5.6363915,43.525057,15:56:19</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-5.411269</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_338</name>
+                          <Point>
+                            <coordinates>-5.6363941,43.5250603,15:56:21</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-5.3936477</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_339</name>
+                          <Point>
+                            <coordinates>-5.636398,43.5250592,15:56:23</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-5.40639</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_340</name>
+                          <Point>
+                            <coordinates>-5.6363996,43.5250596,15:56:25</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-5.407198</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_341</name>
+                          <Point>
+                            <coordinates>-5.6364067,43.5250569,15:56:27</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-5.3990316</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_342</name>
+                          <Point>
+                            <coordinates>-5.6364117,43.525052,15:56:30</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-5.400445</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_343</name>
+                          <Point>
+                            <coordinates>-5.6364122,43.5250496,15:56:32</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-5.432418</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                    
+                        <Placemark>
+                          <name>Medida_344</name>
+                          <Point>
+                            <coordinates>-5.6364158,43.5250515,15:56:34</coordinates>
+                          </Point>
+                          <ExtendedData>
+                            <Data name="Measure">
+                              <value>-5.41648</value>
+                            </Data>
+                          </ExtendedData>
+                        </Placemark>
+                        </Document>
+                    </kml>
+                    

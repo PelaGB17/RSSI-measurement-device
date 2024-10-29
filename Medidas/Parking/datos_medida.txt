@@ -1,0 +1,12 @@
+Frecuencia: 2.4 GHz
+Dispositivo SDR transmisor: B200 mini
+Ganancia del transmisor: 40 dB
+Ganancia de la antena transmisora: 1.5 dB
+Polarización de la antena transmisora: Circular
+Altura de la antena transmisora: 44 cm
+Pérdidas en coaxial del transmisor: 1dB
+Dispositivo SDR receptor: B200 mini
+Ganancia de la antena receptora: 1.5 dB
+Polarización de la antena receptora: Circular
+Altura de la antena receptora: 32 cm
+Pérdidas en coaxial del receptor: 1dB

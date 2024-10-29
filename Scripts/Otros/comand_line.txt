@@ -1,0 +1,10 @@
+cd Desktop/Scripts/USRP
+python3 USRP_GPSD.py -lat 0 -lon 60 -f 2400000000 -g 40 -n medidas
+
+
+Arrancar Matlab
+cd /usr/local/MATLAB/R2023b/bin
+./matlab -softwareopengl
+
+EvnVaPiOjLNNY4W1xJWF (matlab)
+q8MEuvzghFkFRH5kUTJH= (uniovi)

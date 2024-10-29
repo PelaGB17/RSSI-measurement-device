@@ -1,0 +1,18 @@
+% Line 1: Frecuencia de operación (MHz). Los posibles valores son únicamente 2.3e3 ó 5.1e3 MHz.
+% Line 2: Dispositivo Tx. Si se introduce un "1", se selecciona B210; si se introduce un "2", se selecciona B200 mini.
+% Line 3: Ganancia Tx (dB).  Los posibles valores son entre 0 y 80 dB con pasos de 10 dB.
+% Line 4: Ganancia de las antenas (dB)
+% Line 5: Altura de las antenas Tx (m)
+% Line 6: Dispositivo Rx. Si se introduce un "1", se selecciona B210; si se introduce un "2", se selecciona B200 mini.
+% Line 7: Ganancia Rx (dB). Los posibles valores son entre 0 y 80 dB con pasos de 10 dB.
+% Line 8: Amplificadores externos. Si se introduce un "0", no se tienen en cuenta; si se introduce un "1", se entiende que se utiliza un único amplificador; si se introduce un "2", hay dos amplificadores.
+% Line 9: Altura de las antenas Rx (m)
+2.4e3
+2
+80
+0
+0.4
+2
+40
+0
+0.3

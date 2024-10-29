@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+                <kml xmlns="http://www.opengis.net/kml/2.2">
+                  <Document>
+                    <name>Medidas en Google Maps</name>
+                    <description>Coordenadas con medidas</description>
+                
+                    <Placemark>
+                      <name>Medida_1</name>
+                      <Point>
+                        <coordinates>-5.636426667,43.525216667,(13.7,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-3.8273323</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>12</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_2</name>
+                      <Point>
+                        <coordinates>-5.636433333,43.52522,(13.7,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-4.8486013</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_3</name>
+                      <Point>
+                        <coordinates>-5.636426667,43.525216667,(13.7,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-12.434914</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_4</name>
+                      <Point>
+                        <coordinates>-5.636391667,43.525206667,(13.7,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-17.34747</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_5</name>
+                      <Point>
+                        <coordinates>-5.63636,43.525196667,(13.9,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-18.444445</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_6</name>
+                      <Point>
+                        <coordinates>-5.63633,43.525193333,(14.0,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-19.904575</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_7</name>
+                      <Point>
+                        <coordinates>-5.636296667,43.525191667,(14.4,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-23.927647</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_8</name>
+                      <Point>
+                        <coordinates>-5.636258333,43.525183333,(14.7,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-23.474184</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_9</name>
+                      <Point>
+                        <coordinates>-5.636216667,43.52518,(15.0,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-30.431074</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_10</name>
+                      <Point>
+                        <coordinates>-5.636166667,43.525181667,(15.2,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-26.267122</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_11</name>
+                      <Point>
+                        <coordinates>-5.636121667,43.525178333,(15.5,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-26.800613</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_12</name>
+                      <Point>
+                        <coordinates>-5.63607,43.525175,(15.7,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-28.959217</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_13</name>
+                      <Point>
+                        <coordinates>-5.636025,43.525173333,(16.0,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-32.26601</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_14</name>
+                      <Point>
+                        <coordinates>-5.635985,43.525175,(16.3,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-36.649174</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_15</name>
+                      <Point>
+                        <coordinates>-5.635941667,43.525178333,(16.6,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-40.28209</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_16</name>
+                      <Point>
+                        <coordinates>-5.635896667,43.52518,(16.8,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-36.6193</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_17</name>
+                      <Point>
+                        <coordinates>-5.635855,43.52518,(17.0,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-34.138268</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_18</name>
+                      <Point>
+                        <coordinates>-5.635815,43.525186667,(17.3,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-35.71499</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_19</name>
+                      <Point>
+                        <coordinates>-5.635768333,43.52519,(17.6,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-33.995872</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_20</name>
+                      <Point>
+                        <coordinates>-5.635718333,43.52519,(17.8,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-33.00695</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_21</name>
+                      <Point>
+                        <coordinates>-5.635655,43.52519,(18.1,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-34.016266</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_22</name>
+                      <Point>
+                        <coordinates>-5.6356,43.525196667,(18.4,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-33.351067</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_23</name>
+                      <Point>
+                        <coordinates>-5.635568333,43.525193333,(18.6,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-33.927246</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_24</name>
+                      <Point>
+                        <coordinates>-5.635558333,43.525191667,(18.7,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-34.550343</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_25</name>
+                      <Point>
+                        <coordinates>-5.635556667,43.525198333,(18.7,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-31.690552</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_26</name>
+                      <Point>
+                        <coordinates>-5.635603333,43.5252,(18.6,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-32.16539</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_27</name>
+                      <Point>
+                        <coordinates>-5.635663333,43.525198333,(18.3,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-35.202026</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_28</name>
+                      <Point>
+                        <coordinates>-5.635711667,43.525195,(18.1,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-37.699306</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_29</name>
+                      <Point>
+                        <coordinates>-5.635768333,43.525193333,(17.9,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-38.175568</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_30</name>
+                      <Point>
+                        <coordinates>-5.635815,43.525186667,(17.7,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-38.78228</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_31</name>
+                      <Point>
+                        <coordinates>-5.635853333,43.525185,(17.7,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-49.694134</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_32</name>
+                      <Point>
+                        <coordinates>-5.635908333,43.52518,(17.8,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-41.972805</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_33</name>
+                      <Point>
+                        <coordinates>-5.635946667,43.525181667,(17.7,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-30.998281</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_34</name>
+                      <Point>
+                        <coordinates>-5.63598,43.525178333,(17.6,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-27.749514</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_35</name>
+                      <Point>
+                        <coordinates>-5.636031667,43.525173333,(17.4,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-25.904333</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_36</name>
+                      <Point>
+                        <coordinates>-5.63609,43.525171667,(17.4,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-29.952177</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_37</name>
+                      <Point>
+                        <coordinates>-5.636148333,43.525166667,(17.2,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-24.739283</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_38</name>
+                      <Point>
+                        <coordinates>-5.636205,43.525166667,(16.9,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-24.757797</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_39</name>
+                      <Point>
+                        <coordinates>-5.636255,43.525168333,(16.8,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-20.485037</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_40</name>
+                      <Point>
+                        <coordinates>-5.636308333,43.525166667,(16.5,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-16.459665</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                
+                    <Placemark>
+                      <name>Medida_41</name>
+                      <Point>
+                        <coordinates>-5.636355,43.525161667,(16.4,)</coordinates>
+                      </Point>
+                      <ExtendedData>
+                        <Data name="Measure">
+                          <value>-5.7601566</value>
+                        </Data>
+                        <Data name="Satellites">
+                          <value>13</value>
+                        </Data>
+                      </ExtendedData>
+                    </Placemark>
+                    </Document>
+                </kml>
+                

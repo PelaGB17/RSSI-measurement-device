@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: RSSI-measurement-device
+Version: 0.0.2
+Summary: Aplicación para el análisis de cobertura mediante medidas de RSSI georreferenciadas.
+Author-email: Pelayo Garcia Barcena <UO282145@uniovi.es>
+Keywords: gnuradio
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.0
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: Adafruit-Blinka
+Requires-Dist: adafruit-circuitpython-bmp280
+Requires-Dist: adafruit-circuitpython-ssd1306
+Requires-Dist: pillow
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: geopy
+Requires-Dist: gpsd-py3
+Requires-Dist: seaborn
+Requires-Dist: scipy
+Requires-Dist: pyproj

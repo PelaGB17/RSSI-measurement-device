@@ -1,0 +1,12 @@
+% Line 1: Frecuencia de operación (MHz). Los posibles valores son únicamente 2.3e3 ó 5.1e3 MHz.
+% Line 2: Ganancia Tx (dB).  Los posibles valores son entre 0 y 80 dB con pasos de 10 dB.
+% Line 3: Ganancia de las antenas (dB).
+% Line 4: Altura de las antenas Tx (m).
+% Line 5: Ganancia Rx (dB). Los posibles valores son entre 0 y 80 dB con pasos de 10 dB.
+% Line 6: Altura de las antenas Rx (m).
+5000
+80
+1
+1.07
+40
+0.3

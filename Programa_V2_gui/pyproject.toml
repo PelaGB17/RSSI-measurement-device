@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+rssidev_gui = ["*.py", "assets/*.png"]
+
+[project]
+name = "RSSI-measurement-device-interfaced"
+version = "0.0.2"
+authors = [
+  { name="Pelayo Garcia Barcena", email="UO282145@uniovi.es" },
+]
+description = "Aplicación para el análisis de cobertura mediante medidas de RSSI georreferenciadas."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+		'Development Status :: 3 - Alpha',
+		'Intended Audience :: Developers',
+		'Natural Language :: English',
+		'Operating System :: Unix',
+		'Programming Language :: Python :: 3.0',
+]
+keywords = ["gnuradio",
+]
+dependencies = [
+	"Adafruit-Blinka",
+	"adafruit-circuitpython-bmp280",
+	"adafruit-circuitpython-ssd1306",
+	"pillow",
+	"pandas",
+	"numpy",
+	"geopy",
+	"gpsd-py3",
+	"seaborn",
+	"scipy",
+	"pyproj",
+]
+
+[project.scripts]
+rssidev_gui = "rssidev_gui.Interfaz:start"

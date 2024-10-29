@@ -1,0 +1,3 @@
+Latitud media: 43.52468115492953
+Longitud media: -5.635157583258747
+Altura media: 40.85244923703114
